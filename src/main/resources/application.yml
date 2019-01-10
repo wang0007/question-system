@@ -1,0 +1,80 @@
+server:
+  port: 8080
+  compression:
+    enabled: true
+  tomcat:
+    accesslog:
+      directory: ./logs
+      enabled: false
+      prefix: access_log
+    accept-count: 500
+    max-threads: 600
+    min-spare-threads: 50
+  undertow:
+    accesslog:
+      dir: ./logs
+      enabled: true
+      prefix: access_log.
+    worker-threads: 400
+
+
+spring:
+  profiles:
+    active: develop
+  data:
+    mongodb:
+         database: question
+         host: localhost
+         port: 27017
+  redis:
+    database: 0
+    host: localhost
+    port: 6379
+    timeout: PT3S
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+      fileSizeThreshold: 200MB
+      location: C:/inetpub/files
+  resources:
+    static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,file:./dist/
+  jackson:
+    default-property-inclusion: non_null
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: true
+  messages:
+    basename: messages
+
+
+
+
+
+
+
+yonyoucloud:
+  upesn:
+    app-name: conference
+    file:
+      remote-path-prefix: conference
+      oss:
+        bucket-name: conference-system
+        internal-endpoint: conference-system.oss-cn-beijing-internal.aliyuncs.com
+        access-key: LTAIVfPZVI5X9YL0
+        access-secret: iA3RlgURhpDnnnvWixo0VX8PrGbrvj
+        download-url-prefix: https://conference-system.oss-cn-beijing.aliyuncs.com
+    conference:
+      host: http://140.143.133.139:8000
+      web-prefix: web/index.html
+      app-prefix: app/index.html
+      app-id: 1215
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web.servlet: INFO
+    org.springframework.web.client.RestTemplate: DEBUG
+    org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver: DEBUG
+    org.springframework.web.method.support.InvocableHandlerMethod: DEBUG
+    org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod: DEBUG
+  path: ./logs

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="人脸采集">
+    <meta name="keywords" content="用友夏令营">
+    <meta name="author" content="chenaw@yonyou.com">
+    <meta name="robots" content="none">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <title>人脸采集</title>
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+    <!-- <script src="https://cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script> -->
+	<script>
+		;(function(doc, win) {
+		    var docEl = doc.documentElement,
+		        resizeEvt = 'onorientationchange' in window ? 'onorientationchange' : 'resize',
+		        recalc = function() {
+		            var clientWidth = docEl.clientWidth;
+		            if (!clientWidth) return;
+		            if (clientWidth >= 750) {
+		                docEl.style.fontSize = '100px';
+		            } else {
+		                docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+		            }
+		        };
+
+		    if (!doc.addEventListener) return;
+		    win.addEventListener(resizeEvt, recalc, false);
+		    doc.addEventListener('DOMContentLoaded', recalc, false);
+		    recalc();
+		})(document, window);
+	</script>
+    <style>
+        html {
+	        font-size: 50px;
+        }
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            overflow: hidden;
+            font-family: "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+            user-select: none;
+        }
+        html {
+            background: linear-gradient(180deg,rgba(217,221,223,1),rgba(152,157,159,1));
+            background: -webkit-linear-gradient(180deg,rgba(217,221,223,1),rgba(152,157,159,1));
+        }
+        body {
+            background: url(imgs/lundao-logo.png) no-repeat bottom / contain;
+        }
+
+        .page-container .title-bg {
+            display: block;
+            width: 6.3rem;
+            height: 2.5rem;
+            margin: 1.06rem auto 0;
+        }
+
+        .page-container .submit-form .name-wrapper {
+            display: flex;
+            display: -webkit-flex;
+            position: relative;
+            align-items: center;
+            -webkit-align-items: center;
+            width: 6.7rem;
+            height: 0.88rem;
+            margin: 0 auto 0.32rem;
+            font-size: 0;
+            background-color: #fff;
+            border-radius: 0.08rem;
+        }
+
+        .page-container .submit-form .name-title {
+            margin-left: 0.32rem;
+            color: #333;
+            font-size: 16px;
+        }
+
+        .page-container .submit-form .user-name {
+            text-align: right;
+            position: absolute;
+            top: 50%;
+            right: 0.28rem;
+            font-size: 16px;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+        }
+
+        .page-container .submit-form .camera-wrapper {
+            display: flex;
+            display: -webkit-flex;
+            position: relative;
+            align-items: center;
+            -webkit-align-items: center;
+            background-color: #fff;
+            width: 6.7rem;
+            margin: 0 auto 0.8rem;
+            border-radius: 0.08rem;
+        }
+
+        .page-container .submit-form .camer-text {
+            font-size: 16px;
+            margin: 0 0.7rem 0 0.32rem;
+            color: #333;
+        }
+
+        .page-container .submit-form .btn-camera {
+            width: 1.88rem;
+            margin: 0.24rem 0;
+            height: 1.88rem;
+            border-radius: 0.08rem;
+            font-size: 0;
+            background: #eee url(imgs/camera.png) no-repeat center;
+            background-size: 0.6rem 0.52rem;
+        }
+
+        .page-container .submit-form .btn-camera.selected {
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            background-color: #fff;
+        }
+
+        .page-container .submit-form .btn-camera input[type="file"] {
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+        }
+
+        .page-container .submit-form .submit {
+            background: url("imgs/btn.png") no-repeat center / contain;
+            width: 6.7rem;
+            height: 0.88rem;
+            margin: 0 auto;
+            padding: 0.22rem 0;
+            /* color: #7C3730;
+            font-size: 16px;
+            text-align: center;
+            border-radius: 0.1rem;
+            background-color: #FFCC52; */
+        }
+
+        .toast-msg {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 2.2rem;
+            padding: 0.2rem;
+            font-size: 14px;
+            line-height: 18px;
+            color: #fff;
+            text-align: center;
+            opacity: 0;
+            background-color: #5C5C5C;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            border-radius: 0.08rem;
+            transition: opacity 0.4s cubic-bezier(.3, 0, 0, 1.3);
+        }
+        .loading-wrapper {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            padding: 0.2rem 0;
+            width: 1.8rem;
+            font-size: 12px;
+            text-align: center;
+            background-color: #5C5C5C;
+            color: #fff;
+            opacity: 0;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            transition: opacity 0.4s cubic-bezier(.3, 0, 0, 1.3)
+        }
+        .loading-wrapper .loading-logo {
+            width: 0.6rem;
+            height: 0.6rem;
+            margin-top: 0.14rem;
+        }
+        .loading-wrapper .text {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <img src="imgs/lundao-title.png" class="title-bg">
+        <div class="submit-form">
+            <div class="name-wrapper">
+                <span class="name-title">姓名</span>
+                <span class="user-name"></span>
+            </div>
+            <div class="camera-wrapper">
+                <p class="camer-text">请上传本人清晰正脸照片</p>
+                <div class="btn-camera">
+                    <input id="fileImage" type="file" accept="image/*" capture="camera">
+                </div>
+            </div>
+            <div class="submit"></div>
+        </div>
+    </div>
+    <div class="toast-msg"></div>
+    <div class="loading-wrapper">
+        <img src="imgs/loading.svg" class="loading-logo">
+        <p class="text"></p>
+    </div>
+    <script type="text/javascript">
+        ;(function() {
+            var config = {
+                basePath: 'localhost' === window.location.hostname ?
+                "http://123.103.9.204:6058/conference/rest/v1" : 
+                window.location.protocol + "//" + window.location.host + "/conference/rest/v1"
+            };
+            function ScanFace(params) {
+                this.basePath = params.basePath;
+                this.xhr = null;
+                this.token = "";
+                this.file = null;
+                this.commitTimer = null;
+                this.faceUrl = "";
+            }
+            ScanFace.prototype = {
+                init: function() { // 初始化
+                    this.createAjax();
+                    this.getUserInfo();
+                    this.events();
+                    this.getFaceState();
+                },
+                nodes: {
+                    $inputName: $(".name-input"),
+                    $fileImage: $("#fileImage"),
+                    $btnCamera: $(".btn-camera"),
+                    $toash: $(".toast-msg"),
+                    $userName: $(".user-name"),
+                    $submit: $(".submit"),
+                    $loading: $(".loading-wrapper")
+                },
+                createAjax: function() { // 初始化ajax
+                    this.xhr = window.XMLHttpRequest ?
+                        new XMLHttpRequest() :
+                        new ActiveXObject("Microsoft.XMLHTTP");
+                },
+                getQueryString: function() { // 获取地址栏参数
+                    var params = window.location.search.length > 0 ? window.location.search.substring(1) : "",
+                        itemsArr = params.length ? params.split("&") : [],
+                        item = [],
+                        args = {};
+                    itemsArr.forEach(function(val, key) {
+                        item = val.split("=");
+                        if(decodeURIComponent(item[0]).length) {
+                            args[item[0]] = decodeURIComponent(item[1]);
+                        }
+                    })
+                    return args;
+                },
+                ajax: function (params) { // 封装ajax
+                    var _this = this;
+                    var ContentTypeArr = [
+                        "application/json",
+                        "multipart/form-data",
+                        "application/x-www-form-urlencoded"
+                    ]; // 默认只处理3种类型
+
+                    var type = params.type && params.type.toLowerCase() || "get",
+                        data = params.data || null,
+                        contentType = params.contentType || "application/json",
+                        url = this.basePath + (params.url || "");
+                    
+                    if (data) {
+                        
+                        switch (ContentTypeArr.indexOf(contentType)) {
+                            case 1: {
+                                var formData = new FormData();
+                                (function iteratorFormData(data) {
+                                    for (var property in data) {
+                                        if (data[property] instanceof Array) {
+                                            iteratorFormData(data[property]);
+                                        } else {
+                                            formData.append(property, data[property]);
+                                        }
+                                    }
+                                })(data);
+                                data = formData;
+                                break;
+                            }
+                            case 2: {
+                                var tmpArr = [];
+                                for (var property in data) {
+                                    tmpArr.push(property, data[property]);
+                                }
+                                data = tmpArr.join("&");
+                                break;
+                            }
+                            default: {// 默认json格式
+                                data = JSON.stringify(data);
+                                break;
+                            }
+                        }
+                    }
+                    
+                    this.xhr.open(type, url, true);
+                    if(contentType !== 'multipart/form-data') {
+                        this.xhr.setRequestHeader("Content-type", contentType);
+                    }
+                    this.xhr.send(data);
+                    this.xhr.onreadystatechange = function () {
+                        if (_this.xhr.readyState === 4) {
+                            if (_this.xhr.status === 200) {
+                                params.success && params.success(JSON.parse(_this.xhr.responseText));
+                            } else {
+                                params.error && params.error(JSON.parse(_this.xhr.responseText));
+                            }
+                        }
+                    };
+                    
+                    this.xhr.onerror = function () {
+                        params.error && params.error(JSON.parse(_this.xhr.responseText));
+                    };
+                },
+                getUserInfo: function () { // 获取用户信息
+                    var code = this.getQueryString().code || "";
+                    var _this = this;
+                    this.ajax({
+                        type: "post",
+                        url: "/auth/code/" + code,
+                        success: function(data) {
+                            _this.token = data.token || "";
+                            _this.nodes.$userName.text(data.userInfo && data.userInfo.name || "");
+                        },
+                        error: function(error) {
+                            _this.showToash("网络错误，请稍后重试！"); 
+                        }
+                    });
+                },
+                getFaceState: function() { // 回显注册状态
+                    var url = window.localStorage.getItem("face_url") || "";
+                    if (url) {
+                        this.faceUrl = url;
+                        $(".btn-camera").
+                        addClass("selected").
+                        css({"background-image": "url(" + this.faceUrl + ")"});
+                        // this.nodes.$submit.text("已提交");
+                    }
+                },
+                submit: function() { // 注册
+                    var _this = this;
+                    this.ajax({
+                        type: "post",
+                        url: "/client/ai/face/lundao/registration?token=" + _this.token,
+                        data: {
+                            url: _this.faceUrl
+                        },
+                        success: function(data) {
+                            _this.nodes.$loading.css("opacity", 0);
+                            _this.showToash("上传成功！");
+                            // _this.nodes.$submit.text("已提交");
+                            window.localStorage.setItem("face_url", _this.faceUrl);
+                        },
+                        error: function(error) {
+                            _this.nodes.$loading.css("opacity", 0);
+                            _this.showToash("抱歉，未检测到人脸！");       
+                        }
+                    });       
+                },
+                showToash: function(text) { // 显示提示
+                    var _this = this;
+                    this.nodes.$toash.text(text).css("opacity", 1);
+                    setTimeout(function() {
+                        _this.nodes.$toash.text(text).css("opacity", 0);
+                    }, 2000);
+                },
+                events: function() { // 事件
+                    var _this = this;
+                    // 文上上传
+                    _this.nodes.$fileImage[0].addEventListener("change", function(e) {
+                        _this.file = e && e.target && e.target.files[0];
+                        if (_this.file.size > 10485760) {
+                            _this.showToash("文件大小不能大于10M！");
+                            _this.file = null;
+                        } else {
+                            try {
+                                // var freader = new FileReader();
+                                // freader.readAsDataURL(_this.file);  
+                                // freader.onload = function(e) {  
+                                //     $(".btn-camera").addClass("selected").css({"background-image": "url(" + e.target.result + ")"});
+                                // };
+                                _this.nodes.$loading.css("opacity", 1).find(".text").text("正在上传...");
+                                _this.ajax({
+                                    type: "post",
+                                    url: "/client/file/image?compressRadio=80&gravityRotate=true&token=" + _this.token,
+                                    contentType: "multipart/form-data",
+                                    data: {
+                                        fileData: _this.file
+                                    },
+                                    success: function(data) {
+                                        _this.nodes.$loading.css("opacity", 0);
+                                        _this.faceUrl = data.compressUrl || "";
+                                        $(".btn-camera").
+                                        addClass("selected").
+                                        css({"background-image": "url(" + _this.faceUrl + ")"});
+                                        // _this.nodes.$submit.text("提交");
+                                    },
+                                    error: function(error) {
+                                        _this.nodes.$loading.css("opacity", 0);
+                                        _this.showToash("照片上传失败, 请重新上传！");
+                                    }
+                                });
+                            } catch (error) {
+                                _this.nodes.$loading.css("opacity", 0);
+                                _this.showToash("照片上传失败, 请重新上传！");
+                            }
+                        }
+                    });
+                    // 提交
+                    this.nodes.$submit[0].addEventListener("touchend", function(e) {
+                        if(!_this.faceUrl) {
+                            _this.showToash("请先上传照片！");
+                        }else {
+                            _this.nodes.$loading.css("opacity", 1).find(".text").text("提交中...");
+                            _this.commitTimer && clearTimeout(_this.commitTimer);
+                            _this.commitTimer = setTimeout(function() { // 节流
+                                _this.submit();
+                            }, 2000);
+                        }
+                    });
+                }
+            }
+            new ScanFace(config).init();
+        })();
+    </script>
+</body>
+</html>
