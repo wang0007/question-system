@@ -15,8 +15,8 @@ import javax.annotation.Resource;
 /**
  * 二维码相关接口
  *
- * @author yegk7
- * @since 2018/8/3 11:15
+ * @author wangshyi
+ * @since 2018/11/3 11:15
  */
 @Slf4j
 @RestController

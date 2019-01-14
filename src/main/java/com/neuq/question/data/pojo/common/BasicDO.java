@@ -4,7 +4,7 @@ import lombok.Data;
 import org.springframework.data.annotation.Id;
 
 /**
- * @author liuhaoi
+ * @author wangshyi
  */
 @Data
 public class BasicDO {

@@ -5,8 +5,8 @@ import lombok.ToString;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 /**
- * @author yegk7
- * @create 2018/7/17 20:56
+ * @author wangshyi
+ * @create 2018/11/17 20:56
  */
 @Document(collection = "common.id.auto-increment")
 @ToString(callSuper = true)

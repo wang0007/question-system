@@ -7,8 +7,8 @@ import com.neuq.question.data.pojo.InAPIUser;
 import java.util.List;
 
 /**
- * @author sunhuih
- * @date 2018/8/29  15:46
+ * @author wangshyi
+ * @date 2018/11/29  15:46
  */
 
 public interface ActivityBarrageRecordService {

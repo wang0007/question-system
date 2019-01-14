@@ -4,7 +4,7 @@ import com.neuq.question.data.pojo.ConferenceSignUpSettingDO;
 import com.neuq.question.web.rest.management.conference.signup.SignUpSettingController;
 
 /**
- * @author liuhaoi
+ * @author wangshyi
  */
 public interface SignUpSettingRepository {
 

@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * 大会报名记录
  *
- * @author liuhaoi
+ * @author wangshyi
  */
 @Document(collection = "activity.sign_up.record")
 @Data

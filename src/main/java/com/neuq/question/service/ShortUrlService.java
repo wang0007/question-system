@@ -4,8 +4,8 @@ package com.neuq.question.service;
 import com.neuq.question.data.pojo.common.ShortUrlDO;
 
 /**
- * @author yegk7
- * @since 2018/8/2 15:10
+ * @author wangshyi
+ * @since 2018/11/2 15:10
  */
 public interface ShortUrlService {
 

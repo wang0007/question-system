@@ -18,8 +18,8 @@ import java.util.UUID;
 /**
  * 背景图片相关接口
  *
- * @author yegk7
- * @since 2018/7/31 20:45
+ * @author wangshyi
+ * @since 2018/11/3 20:45
  */
 @Slf4j
 @RestController

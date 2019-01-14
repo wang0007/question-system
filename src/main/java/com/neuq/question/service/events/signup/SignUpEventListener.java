@@ -6,7 +6,7 @@ import com.neuq.question.service.events.signup.pojo.SignUpEvent;
 /**
  * 报名事件监听接口
  *
- * @author yegk7
+ * @author wangshyi
  */
 public interface SignUpEventListener {
 

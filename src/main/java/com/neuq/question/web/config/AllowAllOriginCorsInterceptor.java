@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * @author liuhaoi
+ * @author wangshyi
  */
 public class AllowAllOriginCorsInterceptor extends HandlerInterceptorAdapter {
 

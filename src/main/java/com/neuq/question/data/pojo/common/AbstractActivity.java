@@ -6,7 +6,7 @@ import lombok.ToString;
 import org.springframework.data.mongodb.core.index.Indexed;
 
 /**
- * @author liuhaoi
+ * @author wangshyi
  */
 @Data
 @EqualsAndHashCode(callSuper = true)

@@ -6,7 +6,7 @@ import com.neuq.question.data.pojo.ExamResultDO;
 import java.util.List;
 
 /**
- * @author yegk7
+ * @author wangshyi
  */
 public interface ExamResultRepository {
 

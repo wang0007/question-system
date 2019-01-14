@@ -6,7 +6,7 @@ package com.neuq.question.service.iapi.pojo;
  */
 
 /**
- * @author liuhaoi
+ * @author wangshyi
  */
 public interface HttpInAPIRequestTemplate {
 

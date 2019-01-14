@@ -16,7 +16,7 @@ import java.util.regex.Pattern;
 /**
  * 基于spEL的消息模板渲染引擎
  *
- * @author liuhaoi
+ * @author wangshyi
  */
 @Component
 @Slf4j

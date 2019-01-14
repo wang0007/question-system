@@ -5,7 +5,7 @@ import com.neuq.question.data.pojo.ConferenceDO;
 import com.neuq.question.web.rest.management.conference.ConferenceActivityController;
 
 /**
- * @author liuhaoi
+ * @author wangshyi
  */
 public interface ConferenceActivityService {
 

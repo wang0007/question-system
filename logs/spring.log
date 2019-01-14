@@ -1123,3 +1123,301 @@ Caused by: java.lang.NullPointerException: null
 2019-01-14 15:00:11.082  INFO 8728 --- [RMI TCP Connection(15)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 314 ms
 2019-01-14 15:00:13.060  INFO 8728 --- [RMI TCP Connection(11)-127.0.0.1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
 2019-01-14 15:00:13.073  INFO 8728 --- [RMI TCP Connection(11)-127.0.0.1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2019-01-14 18:30:50.150  INFO 8916 --- [main] com.neuq.question.ApplicationStarter     : Starting ApplicationStarter on E5270-PC with PID 8916 (D:\WorkSpaces\neuq\out\production\classes started by Administrator in D:\WorkSpaces\neuq)
+2019-01-14 18:30:50.199  INFO 8916 --- [main] com.neuq.question.ApplicationStarter     : The following profiles are active: develop
+2019-01-14 18:30:54.652  INFO 8916 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-14 18:30:54.654  INFO 8916 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-14 18:30:54.725  INFO 8916 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51ms. Found 0 repository interfaces.
+2019-01-14 18:30:54.773  INFO 8916 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-14 18:30:54.776  INFO 8916 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-14 18:30:54.848  INFO 8916 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24ms. Found 0 repository interfaces.
+2019-01-14 18:30:55.777  INFO 8916 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$cbd043fb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-14 18:30:56.570  INFO 8916 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2019-01-14 18:30:56.619  INFO 8916 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2019-01-14 18:30:56.747  WARN 8916 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2019-01-14 18:30:56.815  INFO 8916 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2019-01-14 18:30:56.816  INFO 8916 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6457 ms
+2019-01-14 18:30:57.977  INFO 8916 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=1000}
+2019-01-14 18:30:57.977  INFO 8916 --- [main] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2019-01-14 18:30:59.375  INFO 8916 --- [cluster-ClusterId{value='5c3c64e180f9e322d4418a97', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:13}] to localhost:27017
+2019-01-14 18:30:59.435  INFO 8916 --- [cluster-ClusterId{value='5c3c64e180f9e322d4418a97', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 5]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=17856038}
+2019-01-14 18:30:59.438  INFO 8916 --- [cluster-ClusterId{value='5c3c64e180f9e322d4418a97', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2019-01-14 18:30:59.878  INFO 8916 --- [main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:14}] to localhost:27017
+2019-01-14 18:31:07.171  WARN 8916 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'fileUploadController' defined in file [D:\WorkSpaces\neuq\out\production\classes\com\neuq\question\web\rest\client\file\FileUploadController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.neuq.question.support.file.FileStorageService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2019-01-14 18:31:07.358  INFO 8916 --- [main] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:2, serverValue:14}] to localhost:27017 because the pool has been closed.
+2019-01-14 18:31:07.581  INFO 8916 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-01-14 18:31:10.205 ERROR 8916 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.neuq.question.web.rest.client.file.FileUploadController required a bean of type 'com.neuq.question.support.file.FileStorageService' that could not be found.
+
+The following candidates were found but could not be injected:
+	- Bean method 'ossFileStorageService' in 'UpesnFileOssAutoConfiguration' not loaded because @ConditionalOnProperty (yonyoucloud.upesn.file.oss.bucket-name) did not find property 'yonyoucloud.upesn.file.oss.bucket-name'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'com.neuq.question.support.file.FileStorageService' in your configuration.
+
+2019-01-14 18:31:55.577  INFO 8320 --- [main] com.neuq.question.ApplicationStarter     : Starting ApplicationStarter on E5270-PC with PID 8320 (D:\WorkSpaces\neuq\out\production\classes started by Administrator in D:\WorkSpaces\neuq)
+2019-01-14 18:31:55.583  INFO 8320 --- [main] com.neuq.question.ApplicationStarter     : The following profiles are active: develop
+2019-01-14 18:31:57.488  INFO 8320 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-14 18:31:57.489  INFO 8320 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-14 18:31:57.544  INFO 8320 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48ms. Found 0 repository interfaces.
+2019-01-14 18:31:57.556  INFO 8320 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-14 18:31:57.557  INFO 8320 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-14 18:31:57.587  INFO 8320 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20ms. Found 0 repository interfaces.
+2019-01-14 18:31:58.142  INFO 8320 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$41cd687b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-14 18:31:58.582  INFO 8320 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2019-01-14 18:31:58.605  INFO 8320 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2019-01-14 18:31:58.814  WARN 8320 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2019-01-14 18:31:58.848  INFO 8320 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2019-01-14 18:31:58.848  INFO 8320 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3202 ms
+2019-01-14 18:31:59.732  INFO 8320 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=1000}
+2019-01-14 18:31:59.732  INFO 8320 --- [main] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2019-01-14 18:31:59.820  INFO 8320 --- [cluster-ClusterId{value='5c3c651f80f9e32080f710a3', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:15}] to localhost:27017
+2019-01-14 18:31:59.830  INFO 8320 --- [cluster-ClusterId{value='5c3c651f80f9e32080f710a3', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 5]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=6849394}
+2019-01-14 18:31:59.833  INFO 8320 --- [cluster-ClusterId{value='5c3c651f80f9e32080f710a3', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2019-01-14 18:32:00.468  INFO 8320 --- [main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:16}] to localhost:27017
+2019-01-14 18:32:20.350  INFO 8320 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-01-14 18:32:24.233  INFO 8320 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-01-14 18:32:27.171  INFO 8320 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-14 18:32:29.688  WARN 8320 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-01-14 18:32:37.035  INFO 8320 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-01-14 18:32:37.244  INFO 8320 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-01-14 18:32:40.968  INFO 8320 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-01-14 18:32:43.172  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_1
+2019-01-14 18:32:43.685  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getQRCodeUsingGET_1
+2019-01-14 18:32:43.976  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_2
+2019-01-14 18:32:45.013  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingGET_1
+2019-01-14 18:32:45.294  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_1
+2019-01-14 18:32:45.324  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2019-01-14 18:32:45.447  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingGET_2
+2019-01-14 18:32:45.486  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_3
+2019-01-14 18:32:45.568  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: queryByConferenceUsingGET_1
+2019-01-14 18:32:45.708  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_2
+2019-01-14 18:32:45.811  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByIdUsingGET_1
+2019-01-14 18:32:45.908  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingGET_3
+2019-01-14 18:32:45.946  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_4
+2019-01-14 18:32:46.004  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_2
+2019-01-14 18:32:47.101  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_1
+2019-01-14 18:32:47.168  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingGET_4
+2019-01-14 18:32:47.508  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_5
+2019-01-14 18:32:47.630  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_3
+2019-01-14 18:32:47.707  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_3
+2019-01-14 18:32:47.741  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_4
+2019-01-14 18:32:47.773  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByIdUsingGET_2
+2019-01-14 18:32:47.872  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingGET_5
+2019-01-14 18:32:48.055  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_5
+2019-01-14 18:32:48.303  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_2
+2019-01-14 18:32:48.588  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_6
+2019-01-14 18:32:50.443  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingGET_6
+2019-01-14 18:32:50.590  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getSettingUsingGET_1
+2019-01-14 18:32:50.633  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_7
+2019-01-14 18:32:50.880  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_3
+2019-01-14 18:32:50.911  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_8
+2019-01-14 18:32:50.973  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_6
+2019-01-14 18:32:51.533  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_4
+2019-01-14 18:32:51.630  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: queryQuestionsUsingGET_1
+2019-01-14 18:32:51.657  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: templateUsingGET_1
+2019-01-14 18:32:51.720  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_9
+2019-01-14 18:32:51.757  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_10
+2019-01-14 18:32:52.374  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_4
+2019-01-14 18:32:52.400  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_7
+2019-01-14 18:32:52.428  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByIdUsingGET_3
+2019-01-14 18:32:52.452  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getQRCodeUsingGET_2
+2019-01-14 18:32:52.488  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_11
+2019-01-14 18:32:52.704  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingGET_7
+2019-01-14 18:32:52.745  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_12
+2019-01-14 18:32:52.922  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingGET_8
+2019-01-14 18:32:52.980  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByIdUsingGET_4
+2019-01-14 18:32:53.020  INFO 8320 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_13
+2019-01-14 18:32:53.944  INFO 8320 --- [main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8080 (http) with context path ''
+2019-01-14 18:32:53.968  INFO 8320 --- [main] com.neuq.question.ApplicationStarter     : Started ApplicationStarter in 59.609 seconds (JVM running for 61.093)
+2019-01-14 18:32:58.086  INFO 8320 --- [RMI TCP Connection(8)-127.0.0.1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-01-14 18:32:58.088  INFO 8320 --- [RMI TCP Connection(8)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-01-14 18:32:58.353  INFO 8320 --- [RMI TCP Connection(8)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 264 ms
+2019-01-14 18:32:59.691  INFO 8320 --- [RMI TCP Connection(4)-127.0.0.1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2019-01-14 18:32:59.703  INFO 8320 --- [RMI TCP Connection(4)-127.0.0.1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2019-01-14 18:42:04.577  INFO 8848 --- [main] com.neuq.question.ApplicationStarter     : Starting ApplicationStarter on E5270-PC with PID 8848 (D:\WorkSpaces\neuq\out\production\classes started by Administrator in D:\WorkSpaces\neuq)
+2019-01-14 18:42:04.584  INFO 8848 --- [main] com.neuq.question.ApplicationStarter     : The following profiles are active: develop
+2019-01-14 18:42:09.926  INFO 8848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-14 18:42:09.927  INFO 8848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-14 18:42:09.984  INFO 8848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49ms. Found 0 repository interfaces.
+2019-01-14 18:42:09.996  INFO 8848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-14 18:42:09.997  INFO 8848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-14 18:42:10.028  INFO 8848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21ms. Found 0 repository interfaces.
+2019-01-14 18:42:10.583  INFO 8848 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$8d80c8d6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-14 18:42:11.178  INFO 8848 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2019-01-14 18:42:11.200  INFO 8848 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2019-01-14 18:42:11.292  WARN 8848 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2019-01-14 18:42:11.327  INFO 8848 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2019-01-14 18:42:11.328  INFO 8848 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6635 ms
+2019-01-14 18:42:12.223  INFO 8848 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=1000}
+2019-01-14 18:42:12.223  INFO 8848 --- [main] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2019-01-14 18:42:12.326  INFO 8848 --- [cluster-ClusterId{value='5c3c678480f9e32290c6c3de', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:17}] to localhost:27017
+2019-01-14 18:42:12.333  INFO 8848 --- [cluster-ClusterId{value='5c3c678480f9e32290c6c3de', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 5]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4917536}
+2019-01-14 18:42:12.335  INFO 8848 --- [cluster-ClusterId{value='5c3c678480f9e32290c6c3de', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2019-01-14 18:42:13.013  INFO 8848 --- [main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:18}] to localhost:27017
+2019-01-14 18:42:18.922  WARN 8848 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'fileUploadController' defined in file [D:\WorkSpaces\neuq\out\production\classes\com\neuq\question\web\rest\client\file\FileUploadController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.neuq.question.support.file.FileStorageService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2019-01-14 18:42:19.088  INFO 8848 --- [main] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:2, serverValue:18}] to localhost:27017 because the pool has been closed.
+2019-01-14 18:42:19.297  INFO 8848 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-01-14 18:42:21.821 ERROR 8848 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.neuq.question.web.rest.client.file.FileUploadController required a bean of type 'com.neuq.question.support.file.FileStorageService' that could not be found.
+
+The following candidates were found but could not be injected:
+	- Bean method 'ossFileStorageService' in 'UpesnFileOssAutoConfiguration' not loaded because @ConditionalOnProperty (yonyoucloud.upesn.file.oss.bucket-name) did not find property 'yonyoucloud.upesn.file.oss.bucket-name'
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'com.neuq.question.support.file.FileStorageService' in your configuration.
+
+2019-01-14 18:43:38.172  INFO 6044 --- [main] com.neuq.question.ApplicationStarter     : Starting ApplicationStarter on E5270-PC with PID 6044 (D:\WorkSpaces\neuq\out\production\classes started by Administrator in D:\WorkSpaces\neuq)
+2019-01-14 18:43:38.178  INFO 6044 --- [main] com.neuq.question.ApplicationStarter     : The following profiles are active: develop
+2019-01-14 18:43:40.067  INFO 6044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-14 18:43:40.068  INFO 6044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-14 18:43:40.123  INFO 6044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47ms. Found 0 repository interfaces.
+2019-01-14 18:43:40.136  INFO 6044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-14 18:43:40.138  INFO 6044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-14 18:43:40.168  INFO 6044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21ms. Found 0 repository interfaces.
+2019-01-14 18:43:40.721  INFO 6044 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$b79bcffc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-14 18:43:41.168  INFO 6044 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2019-01-14 18:43:41.191  INFO 6044 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2019-01-14 18:43:41.268  WARN 6044 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2019-01-14 18:43:41.301  INFO 6044 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2019-01-14 18:43:41.301  INFO 6044 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3065 ms
+2019-01-14 18:43:42.395  INFO 6044 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=1000}
+2019-01-14 18:43:42.395  INFO 6044 --- [main] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2019-01-14 18:43:42.560  INFO 6044 --- [cluster-ClusterId{value='5c3c67de80f9e3179c31e99b', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:19}] to localhost:27017
+2019-01-14 18:43:42.567  INFO 6044 --- [cluster-ClusterId{value='5c3c67de80f9e3179c31e99b', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 5]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4242153}
+2019-01-14 18:43:42.569  INFO 6044 --- [cluster-ClusterId{value='5c3c67de80f9e3179c31e99b', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2019-01-14 18:43:43.101  INFO 6044 --- [main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:20}] to localhost:27017
+2019-01-14 18:43:44.650  WARN 6044 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'applicationProperties': Could not bind properties to 'ApplicationProperties' : prefix=yonyoucloud.upesn.conference, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'yonyoucloud.upesn.conference' to com.neuq.question.configuration.ApplicationProperties$$EnhancerBySpringCGLIB$$b4e57120
+2019-01-14 18:43:44.706  INFO 6044 --- [main] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:2, serverValue:20}] to localhost:27017 because the pool has been closed.
+2019-01-14 18:43:44.724  INFO 6044 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-01-14 18:43:44.773 ERROR 6044 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Binding to target org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'yonyoucloud.upesn.conference' to com.neuq.question.configuration.ApplicationProperties$$EnhancerBySpringCGLIB$$b4e57120 failed:
+
+    Property: yonyoucloud.upesn.conference.appPrefix
+    Value: null
+    Reason: 不能为null
+
+    Property: yonyoucloud.upesn.conference.host
+    Value: null
+    Reason: 不能为null
+
+    Property: yonyoucloud.upesn.conference.webPrefix
+    Value: null
+    Reason: 不能为null
+
+
+Action:
+
+Update your application's configuration
+
+2019-01-14 18:43:55.390  INFO 7420 --- [main] com.neuq.question.ApplicationStarter     : Starting ApplicationStarter on E5270-PC with PID 7420 (D:\WorkSpaces\neuq\out\production\classes started by Administrator in D:\WorkSpaces\neuq)
+2019-01-14 18:43:55.395  INFO 7420 --- [main] com.neuq.question.ApplicationStarter     : The following profiles are active: develop
+2019-01-14 18:43:57.169  INFO 7420 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-14 18:43:57.170  INFO 7420 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-14 18:43:57.223  INFO 7420 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46ms. Found 0 repository interfaces.
+2019-01-14 18:43:57.235  INFO 7420 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-01-14 18:43:57.236  INFO 7420 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-14 18:43:57.265  INFO 7420 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20ms. Found 0 repository interfaces.
+2019-01-14 18:43:57.817  INFO 7420 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$65bf9b4a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-14 18:43:58.254  INFO 7420 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2019-01-14 18:43:58.276  INFO 7420 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2019-01-14 18:43:58.480  WARN 7420 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2019-01-14 18:43:58.514  INFO 7420 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2019-01-14 18:43:58.514  INFO 7420 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3054 ms
+2019-01-14 18:43:59.381  INFO 7420 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=1000}
+2019-01-14 18:43:59.382  INFO 7420 --- [main] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2019-01-14 18:43:59.468  INFO 7420 --- [cluster-ClusterId{value='5c3c67ef80f9e31cfc7e899d', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:21}] to localhost:27017
+2019-01-14 18:43:59.475  INFO 7420 --- [cluster-ClusterId{value='5c3c67ef80f9e31cfc7e899d', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 5]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4741757}
+2019-01-14 18:43:59.477  INFO 7420 --- [cluster-ClusterId{value='5c3c67ef80f9e31cfc7e899d', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2019-01-14 18:44:00.108  INFO 7420 --- [main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:22}] to localhost:27017
+2019-01-14 18:44:20.820  INFO 7420 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-01-14 18:44:25.055  INFO 7420 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-01-14 18:44:28.154  INFO 7420 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-14 18:44:30.865  WARN 7420 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-01-14 18:44:38.821  INFO 7420 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-01-14 18:44:39.085  INFO 7420 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-01-14 18:44:42.928  INFO 7420 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-01-14 18:44:44.760  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_1
+2019-01-14 18:44:45.288  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getQRCodeUsingGET_1
+2019-01-14 18:44:45.590  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_2
+2019-01-14 18:44:46.651  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingGET_1
+2019-01-14 18:44:46.926  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_1
+2019-01-14 18:44:46.957  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2019-01-14 18:44:47.081  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingGET_2
+2019-01-14 18:44:47.121  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_3
+2019-01-14 18:44:47.209  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: queryByConferenceUsingGET_1
+2019-01-14 18:44:47.352  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_2
+2019-01-14 18:44:47.468  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByIdUsingGET_1
+2019-01-14 18:44:47.571  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingGET_3
+2019-01-14 18:44:47.610  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_4
+2019-01-14 18:44:47.667  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_2
+2019-01-14 18:44:48.663  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_1
+2019-01-14 18:44:48.726  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingGET_4
+2019-01-14 18:44:49.081  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_5
+2019-01-14 18:44:49.206  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_3
+2019-01-14 18:44:49.283  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_3
+2019-01-14 18:44:49.317  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_4
+2019-01-14 18:44:49.352  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByIdUsingGET_2
+2019-01-14 18:44:49.454  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingGET_5
+2019-01-14 18:44:49.646  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_5
+2019-01-14 18:44:49.892  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_2
+2019-01-14 18:44:50.166  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_6
+2019-01-14 18:44:52.047  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingGET_6
+2019-01-14 18:44:52.197  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getSettingUsingGET_1
+2019-01-14 18:44:52.243  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_7
+2019-01-14 18:44:52.501  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_3
+2019-01-14 18:44:52.531  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_8
+2019-01-14 18:44:52.596  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_6
+2019-01-14 18:44:53.167  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_4
+2019-01-14 18:44:53.266  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: queryQuestionsUsingGET_1
+2019-01-14 18:44:53.292  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: templateUsingGET_1
+2019-01-14 18:44:53.354  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_9
+2019-01-14 18:44:53.401  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_10
+2019-01-14 18:44:54.033  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_4
+2019-01-14 18:44:54.060  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_7
+2019-01-14 18:44:54.091  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByIdUsingGET_3
+2019-01-14 18:44:54.116  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getQRCodeUsingGET_2
+2019-01-14 18:44:54.153  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_11
+2019-01-14 18:44:54.378  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingGET_7
+2019-01-14 18:44:54.418  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_12
+2019-01-14 18:44:54.608  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingGET_8
+2019-01-14 18:44:54.666  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByIdUsingGET_4
+2019-01-14 18:44:54.708  INFO 7420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_13
+2019-01-14 18:44:55.524  INFO 7420 --- [main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8080 (http) with context path ''
+2019-01-14 18:44:55.548  INFO 7420 --- [main] com.neuq.question.ApplicationStarter     : Started ApplicationStarter in 61.095 seconds (JVM running for 62.788)
+2019-01-14 18:44:59.876  INFO 7420 --- [RMI TCP Connection(7)-127.0.0.1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-01-14 18:44:59.877  INFO 7420 --- [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-01-14 18:45:00.136  INFO 7420 --- [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 258 ms
+2019-01-14 18:45:01.547  INFO 7420 --- [RMI TCP Connection(4)-127.0.0.1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2019-01-14 18:45:01.559  INFO 7420 --- [RMI TCP Connection(4)-127.0.0.1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library

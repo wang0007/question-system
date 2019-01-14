@@ -4,7 +4,7 @@ package com.neuq.question.data.dao;
 import com.neuq.question.data.pojo.common.ShortUrlDO;
 
 /**
- * @author yegk7
+ * @author wangshyi
  * @since 2018/8/3 10:28
  */
 public interface ShortUrlRepository {

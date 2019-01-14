@@ -6,8 +6,8 @@ import com.neuq.question.web.rest.pojo.NotSignInUserResult;
 import java.util.List;
 
 /**
- * @author yegk7
- * @since 2018/7/19 20:18
+ * @author wangshyi
+ * @since 2018/11/19 20:18
  */
 public interface ActivitySignInRecordService {
 

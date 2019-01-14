@@ -5,8 +5,8 @@ import com.neuq.question.data.pojo.ActivitySignInRecordDO;
 import java.util.List;
 
 /**
- * @author yegk7
- * @since 2018/7/17 17:00
+ * @author wangshyi
+ * @since 2018/11/17 17:00
  */
 public interface ActivitySignInRecordRepository {
 

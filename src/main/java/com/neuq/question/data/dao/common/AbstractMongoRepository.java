@@ -6,7 +6,7 @@ import org.springframework.data.mongodb.core.MongoTemplate;
 /**
  * Mongo库访问模板
  *
- * @author liuhaoi
+ * @author wangshyi
  */
 public abstract class AbstractMongoRepository<T> {
 

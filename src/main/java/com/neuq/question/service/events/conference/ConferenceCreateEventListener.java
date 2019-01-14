@@ -1,7 +1,7 @@
 package com.neuq.question.service.events.conference;
 
 /**
- * @author liuhaoi
+ * @author wangshyi
  */
 public interface ConferenceCreateEventListener {
 

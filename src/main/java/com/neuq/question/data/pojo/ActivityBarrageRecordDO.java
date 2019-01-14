@@ -8,8 +8,8 @@ import lombok.ToString;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 /**
- * @author sunhuih
- * @date 2018/8/29  15:48
+ * @author wangshyi
+ * @date 2018/11/29  15:48
  */
 @Document(collection = "activity.barrage.record")
 @Data

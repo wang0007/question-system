@@ -2,8 +2,8 @@ package com.neuq.question.error;
 
 
 /**
- * @author yegk7
- * @since  2018/7/17 14:05
+ * @author wangshyi
+ * @since  2018/11/17 14:05
  */
 public class InviteCodeErrorException extends ECException {
     public InviteCodeErrorException(String message) {

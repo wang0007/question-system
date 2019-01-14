@@ -3,7 +3,7 @@ package com.neuq.question.service.events.activity;
 /**
  * 大会活动创建事件
  *
- * @author liuhaoi
+ * @author wangshyi
  */
 public interface ActivityCreateEventListener {
 

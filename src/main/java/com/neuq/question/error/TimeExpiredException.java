@@ -2,8 +2,8 @@ package com.neuq.question.error;
 
 
 /**
- * @author yegk7
- * @date 2018/9/3 10:15
+ * @author wangshyi
+ * @date 2018/11/3 10:15
  */
 public class TimeExpiredException extends ECException {
     public TimeExpiredException(String message) {

@@ -9,7 +9,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import java.util.List;
 
 /**
- * @author yegk7
+ * @author wangshyi
  * @since 2018/7/30 18:40
  */
 @EqualsAndHashCode(callSuper = true)

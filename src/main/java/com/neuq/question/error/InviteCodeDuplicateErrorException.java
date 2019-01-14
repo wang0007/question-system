@@ -2,7 +2,7 @@ package com.neuq.question.error;
 
 
 /**
- * @author yegk7
+ * @author wangshyi
  */
 public class InviteCodeDuplicateErrorException extends ECException {
     public InviteCodeDuplicateErrorException(String message) {

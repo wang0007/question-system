@@ -14,7 +14,7 @@ package com.neuq.question.service.iapi.pojo;
         import java.util.stream.Stream;
 
 /**
- * @author liuhaoi
+ * @author wangshyi
  */
         public class AbstractApplicationProperties {
 

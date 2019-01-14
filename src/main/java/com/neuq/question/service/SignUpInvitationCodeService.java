@@ -4,7 +4,7 @@ import com.neuq.question.data.pojo.ConferenceSignUpInvitationCodeDO;
 import com.neuq.question.web.rest.management.conference.signup.SignUpInvitationCodeController;
 
 /**
- * @author yegk7
+ * @author wangshyi
  */
 public interface SignUpInvitationCodeService {
 

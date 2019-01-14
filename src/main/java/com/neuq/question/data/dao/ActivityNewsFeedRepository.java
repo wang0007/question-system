@@ -10,7 +10,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * @author liuhaoi
+ * @author wangshyi
  */
 public interface ActivityNewsFeedRepository {
 

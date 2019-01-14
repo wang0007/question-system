@@ -16,7 +16,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * @author liuhaoi
+ * @author wangshyi
  */
 @Slf4j
 @ControllerAdvice("com.yonyoucloud.ec.sns.conference.web.rest")

@@ -3,7 +3,7 @@ package com.neuq.question.support;
 import org.bson.types.ObjectId;
 
 /**
- * @author liuhaoi
+ * @author wangshyi
  */
 public class ObjectIdUtil {
 

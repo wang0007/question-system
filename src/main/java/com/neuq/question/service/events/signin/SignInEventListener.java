@@ -6,7 +6,7 @@ import com.neuq.question.service.events.signin.pojo.SignInEvent;
 /**
  * 签到事件监听接口
  *
- * @author liuhaoi
+ * @author wangshyi
  */
 public interface SignInEventListener {
 

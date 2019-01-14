@@ -4,7 +4,7 @@ package com.neuq.question.data.dao;
 import com.neuq.question.data.pojo.QuestionResultDO;
 
 /**
- * @author yegk7
+ * @author wangshyi
  */
 public interface QuestionResultRepository {
 

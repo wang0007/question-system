@@ -1,8 +1,8 @@
 package com.neuq.question.service;
 
 /**
- * @author yegk7
- * @since 2018/8/11 14:59
+ * @author wangshyi
+ * @since 2018/11/11 14:59
  */
 public interface FileService {
 

@@ -11,8 +11,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * use com.yonyoucloud.ec.sns.starter.core.support.mvc.interceptor.AllowAllOriginCorsInterceptor
- * @author liuhaoi
+ * use com.support.mvc.interceptor.AllowAllOriginCorsInterceptor
+ * @author wangshyi
  */
 public class AllowAllOriginCorsFilter extends GenericFilterBean {
 

@@ -26,7 +26,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 /**
- * @author liuhaoi
+ * @author wangshyi
  */
 @Api(value = "移动端-大会信息接口", description = "移动端-大会信息接口")
 @Slf4j

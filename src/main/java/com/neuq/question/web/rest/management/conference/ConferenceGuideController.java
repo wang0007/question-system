@@ -26,7 +26,7 @@ import java.util.List;
 /**
  * 大会指南接口
  *
- * @author liuhaoi
+ * @author wangshyi
  */
 @Slf4j
 @RestController

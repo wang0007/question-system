@@ -41,8 +41,8 @@ import java.util.Map;
 /**
  * 参会人员管理
  *
- * @author yegk7
- * @since 2018/8/1 18:05
+ * @author wangshyi
+ * @since 2018/11/1 18:05
  */
 @Slf4j
 @RestController

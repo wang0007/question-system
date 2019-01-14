@@ -10,13 +10,11 @@ package com.neuq.question.service.iapi.pojo;
         import java.util.List;
 
 /**
- * @author liuhaoi
+ * @author wangshyi
  */
         @Data
         @EqualsAndHashCode(callSuper = true)
         public class InAPINewFeedItemResponse extends InAPIResponse<List<InAPINewFeedItemDTO>> {
-
-
 
         }
 

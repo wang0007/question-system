@@ -12,7 +12,7 @@ import javax.validation.constraints.Size;
 import java.util.List;
 
 /**
- * @author liuhaoi
+ * @author wangshyi
  */
 @Document(collection = "conference.guide")
 @Data

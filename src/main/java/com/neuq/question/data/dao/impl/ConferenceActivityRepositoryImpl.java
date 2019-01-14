@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.Optional;
 
 /**
- * @author liuhaoi
+ * @author wangshyi
  */
 @Repository
 public class ConferenceActivityRepositoryImpl extends AbstractMongoRepository<ConferenceActivityDO> implements ConferenceActivityRepository {

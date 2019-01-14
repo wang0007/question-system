@@ -10,7 +10,7 @@ import java.util.Set;
 /**
  * 会议数据操作
  *
- * @author liuhaoi
+ * @author wangshyi
  */
 public interface ConferenceRepository {
 

@@ -16,7 +16,7 @@ import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
- * @author liuhaoi
+ * @author wangshyi
  */
 @Configuration
 @Profile({"test", "local", "dev", "develop"})
@@ -37,9 +37,9 @@ public class SwaggerConfig {
 
     private ApiInfo mobileAPIInfo() {
         return new ApiInfoBuilder()
-                .title("会务系统接口文档")
-                .description("会务系统接口文档")
-                .contact(new Contact("刘豪", "", "liuhaoi@yonyou.com"))
+                .title("毕设相关接口文档")
+                .description("毕设相关接口文档")
+                .contact(new Contact("王守一", "", "wangsyi7@163.com"))
                 .version("1.0.1")
                 .build();
     }

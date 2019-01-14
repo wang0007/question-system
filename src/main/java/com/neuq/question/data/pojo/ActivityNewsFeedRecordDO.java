@@ -14,7 +14,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 /**
  * 发言上墙设置
  *
- * @author liuhaoi
+ * @author wangshyi
  */
 @CompoundIndexes({
         @CompoundIndex(name = "activityId_feedId_unique_index", def = "{'activityId' : 1, 'feed._id': 1}", unique = true, dropDups = true)

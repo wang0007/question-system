@@ -3,8 +3,8 @@ package com.neuq.question.domain.enums;
 /**
  * 背景图类型
  *
- * @author yegk7
- * @since 2018/7/30 18:46
+ * @author wangshyi
+ * @since 2018/11/30 18:46
  */
 public enum BackgroundType {
     /**

@@ -9,8 +9,8 @@ import lombok.ToString;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 /**
- * @author yegk7
- * @date 2018/9/10 16:45
+ * @author wangshyi
+ * @date 2018/11/10 16:45
  */
 @Document(collection = "operate.log")
 @EqualsAndHashCode(callSuper = true)

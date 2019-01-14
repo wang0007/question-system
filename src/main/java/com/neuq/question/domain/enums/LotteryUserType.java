@@ -1,8 +1,8 @@
 package com.neuq.question.domain.enums;
 
 /**
- * @author yegk7
- * @since 2018/8/9 12:40
+ * @author wangshyi
+ * @since 2018/11/9 12:40
  */
 public enum LotteryUserType {
 

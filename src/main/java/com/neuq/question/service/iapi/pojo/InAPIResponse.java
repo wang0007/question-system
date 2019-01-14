@@ -9,7 +9,7 @@ import com.neuq.question.service.iapi.impl.InAPIResponseCheckerImpl;
 import lombok.Data;
 
 /**
- * @author liuhaoi
+ * @author wangshyi
  */
 @Data
 public class InAPIResponse<T> {

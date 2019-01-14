@@ -11,7 +11,7 @@ import com.neuq.question.service.iapi.pojo.InAPIRequest;
 import java.util.Map;
 
 /**
- * @author liuhaoi
+ * @author wangshyi
  */
 public interface InAPIRequestSignature {
 

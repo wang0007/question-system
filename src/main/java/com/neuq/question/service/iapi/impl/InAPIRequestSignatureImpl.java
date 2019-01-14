@@ -27,7 +27,7 @@ import java.util.stream.Collectors;
 /**
  * 调用企业空间服务使用的管理类，封装有企业空空间接口的调用规则，调用时须实现UpesnEntityParser接口
  *
- * @author liuhaoi
+ * @author wangshyi
  */
 @Slf4j
 @Service

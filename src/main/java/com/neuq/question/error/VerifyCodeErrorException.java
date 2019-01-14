@@ -2,8 +2,8 @@ package com.neuq.question.error;
 
 
 /**
- * @author yegk7
- * @date 2018/8/29 9:36
+ * @author wangshyi
+ * @date 2018/11/29 9:36
  */
 public class VerifyCodeErrorException extends ECException {
 

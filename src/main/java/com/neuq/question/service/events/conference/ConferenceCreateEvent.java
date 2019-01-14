@@ -5,7 +5,7 @@ import com.neuq.question.data.pojo.ConferenceDO;
 import lombok.Data;
 
 /**
- * @author liuhaoi
+ * @author wangshyi
  */
 @Data
 public class ConferenceCreateEvent {

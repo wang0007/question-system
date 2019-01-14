@@ -8,7 +8,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 /**
  * 二维码映射表
  *
- * @author yegk7
+ * @author wangshyi
  * @since 2018/8/2 15:12
  */
 @Document(collection = "url.short")

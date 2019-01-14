@@ -17,8 +17,8 @@ import java.util.Map;
 /**
  * 短信相关接口
  *
- * @author yegk7
- * @date 2018/8/28 15:57
+ * @author wangshyi
+ * @date 2018/11/28 15:57
  */
 @RestController
 @Slf4j

@@ -10,7 +10,7 @@ import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Repository;
 
 /**
- * @author yegk7
+ * @author wangshyi
  * @since 2018/8/3 10:28
  */
 @Repository

@@ -2,7 +2,7 @@ package com.neuq.question.error;
 
 
 /**
- * @author yegk7
+ * @author wangshyi
  */
 public class InviteCodeLengthErrorException extends ECException {
     public InviteCodeLengthErrorException(String message) {

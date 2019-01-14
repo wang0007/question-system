@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author liuhaoi
+ * @author wangshyi
  */
 @Document(collection = "conference.app")
 @EqualsAndHashCode(callSuper = true)

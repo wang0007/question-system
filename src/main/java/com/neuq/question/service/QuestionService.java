@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author yegk7
+ * @author wangshyi
  */
 public interface QuestionService {
 

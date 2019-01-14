@@ -7,8 +7,8 @@ import com.neuq.question.web.rest.management.signin.ActivitySignInSettingControl
 import java.util.List;
 
 /**
- * @author yegk7
- * @since 2018/7/17 10:06
+ * @author wangshyi
+ * @since 2018/11/17 10:06
  */
 public interface ActivitySignInSettingRepository {
 

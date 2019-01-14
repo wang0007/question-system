@@ -3,8 +3,8 @@ package com.neuq.question.web.rest.pojo;
 import lombok.Data;
 
 /**
- * @author yegk7
- * @since 2018/8/11 10:38
+ * @author wangshyi
+ * @since 2018/11/11 10:38
  */
 @Data
 public class NotSignInUserResult {

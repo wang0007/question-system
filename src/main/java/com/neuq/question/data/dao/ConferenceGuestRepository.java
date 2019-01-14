@@ -6,8 +6,8 @@ import com.neuq.question.web.rest.management.conference.ConferenceGuestControlle
 import java.util.List;
 
 /**
- * @author yegk7
- * @since 2018/8/1 19:02
+ * @author wangshyi
+ * @since 2018/11/1 19:02
  */
 public interface ConferenceGuestRepository {
 

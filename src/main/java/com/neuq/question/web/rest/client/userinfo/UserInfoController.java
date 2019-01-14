@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * 用户信息相关接口
  *
- * @author yaoshw@yonyou.com
+ * @author wangshyi
  */
 @Slf4j
 @RestController

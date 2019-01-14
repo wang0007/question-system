@@ -26,7 +26,7 @@ import java.util.stream.Collectors;
 /**
  * 大会报名表格设置
  *
- * @author liuhaoi
+ * @author wangshyi
  */
 @Slf4j
 @RestController

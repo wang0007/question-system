@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * 大会报名设置
  *
- * @author liuhaoi
+ * @author wangshyi
  */
 @Document(collection = "activity.lottery.setting")
 @Data

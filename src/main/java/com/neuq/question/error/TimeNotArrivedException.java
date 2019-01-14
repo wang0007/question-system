@@ -2,8 +2,8 @@ package com.neuq.question.error;
 
 
 /**
- * @author yegk7
- * @date 2018/9/3 10:22
+ * @author wangshyi
+ * @date 2018/11/3 10:22
  */
 public class TimeNotArrivedException extends ECException {
     public TimeNotArrivedException(String message) {

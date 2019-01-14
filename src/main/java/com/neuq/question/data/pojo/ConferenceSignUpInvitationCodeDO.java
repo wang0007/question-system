@@ -10,7 +10,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 /**
  * 大会邀请码
  *
- * @author liuhaoi
+ * @author wangshyi
  */
 @Document(collection = "activity.sign_up.invitation.code")
 @Data

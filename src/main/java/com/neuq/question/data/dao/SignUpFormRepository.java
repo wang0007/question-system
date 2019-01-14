@@ -4,7 +4,7 @@ import com.neuq.question.data.pojo.ConferenceSignUpFormDO;
 import com.neuq.question.web.rest.management.conference.signup.SignUpFormController;
 
 /**
- * @author liuhaoi
+ * @author wangshyi
  */
 public interface SignUpFormRepository {
 

@@ -3,8 +3,8 @@ package com.neuq.question.domain.enums;
 /**
  * 抽奖投屏类型
  *
- * @author yegk7
- * @create 2018/7/19 11:08
+ * @author wangshyi
+ * @create 2018/11/19 11:08
  */
 public enum LotteryScreenType {
 

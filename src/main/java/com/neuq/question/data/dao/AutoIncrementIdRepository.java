@@ -1,8 +1,8 @@
 package com.neuq.question.data.dao;
 
 /**
- * @author yegk7
- * @create 2018/7/17 21:01
+ * @author wangshyi
+ * @create 2018/11/17 21:01
  */
 public interface AutoIncrementIdRepository {
 

@@ -3,7 +3,7 @@ package com.neuq.question.domain.enums;
 /**
  * 抽奖范围
  *
- * @author liuhaoi
+ * @author wangshyi
  */
 public enum LotteryScope {
 

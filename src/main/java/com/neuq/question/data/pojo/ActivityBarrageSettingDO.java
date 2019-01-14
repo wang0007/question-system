@@ -11,8 +11,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 /**
  * 互动弹幕设置
  *
- * @author yegk7
- * @since 2018/8/5 15:35
+ * @author wangshyi
+ * @since 2018/115 15:35
  */
 @Document(collection = "activity.barrage.setting")
 @Data

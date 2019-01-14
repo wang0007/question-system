@@ -6,7 +6,7 @@ import com.neuq.question.web.rest.management.conference.ConferenceActivityContro
 import java.util.List;
 
 /**
- * @author liuhaoi
+ * @author wangshyi
  */
 public interface ConferenceActivityRepository {
 

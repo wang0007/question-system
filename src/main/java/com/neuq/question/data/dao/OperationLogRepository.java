@@ -9,8 +9,8 @@ import java.util.List;
 /**
  * 操作日志
  *
- * @author yegk7
- * @date 2018/9/11 10:59
+ * @author wangshyi
+ * @date 2018/11/11 10:59
  */
 public interface OperationLogRepository {
 

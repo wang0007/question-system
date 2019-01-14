@@ -13,7 +13,7 @@ import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Repository;
 
 /**
- * @author liuhaoi
+ * @author wangshyi
  */
 @Repository
 public class ConferenceAppRepositoryImpl extends AbstractMongoRepository<ConferenceAppDO> implements ConferenceAppRepository {

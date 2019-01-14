@@ -10,7 +10,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 /**
  * 大会报名设置
  *
- * @author liuhaoi
+ * @author wangshyi
  */
 @Document(collection = "activity.sign_up.setting")
 @Data

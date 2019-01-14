@@ -4,7 +4,7 @@ package com.neuq.question.data.dao;
 import com.neuq.question.data.pojo.ActivityAgendaDO;
 
 /**
- * @author yegk
+ * @author wangshyi
  */
 public interface ActivityAgendaRepository {
 

@@ -20,7 +20,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 /**
- * @author liuhaoi
+ * @author wangshyi
  */
 @Api(value = "移动端-大会应用列表接口", description = "移动端-大会应用列表接口")
 @Slf4j

@@ -22,7 +22,7 @@ import java.util.stream.Collectors;
 /**
  * 大会报名邀请码设置
  *
- * @author liuhaoi
+ * @author wangshyi
  */
 @Slf4j
 @RestController

@@ -15,7 +15,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import javax.servlet.MultipartConfigElement;
 
 /**
- * @author liuhaoi
+ * @author wangshyi
  */
 @Configuration
 @RequiredArgsConstructor

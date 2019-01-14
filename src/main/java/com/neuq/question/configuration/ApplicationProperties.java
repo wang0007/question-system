@@ -10,7 +10,7 @@ import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 
 /**
- * @author liuhaoi
+ * @author wangshyi
  */
 @Data
 @Configuration

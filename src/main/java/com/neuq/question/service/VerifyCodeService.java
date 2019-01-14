@@ -1,8 +1,8 @@
 package com.neuq.question.service;
 
 /**
- * @author yegk7
- * @date 2018/8/28 19:18
+ * @author wangshyi
+ * @date 2018/11/28 19:18
  */
 public interface VerifyCodeService {
 

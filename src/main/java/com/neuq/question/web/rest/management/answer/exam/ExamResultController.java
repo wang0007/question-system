@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 /**
- * @author yegk7
+ * @author wangshyi
  */
 @RestController
 @RequestMapping(value = "rest/v1/answer/exam/result/{examId}")

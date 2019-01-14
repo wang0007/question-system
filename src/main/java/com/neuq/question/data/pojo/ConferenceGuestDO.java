@@ -12,7 +12,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 /**
- * @author yegk7
+ * @author wangshyi
  * @since 2018/8/1 18:58
  */
 @Data

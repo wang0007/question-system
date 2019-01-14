@@ -10,7 +10,7 @@ import java.util.Optional;
 import java.util.Set;
 
 /**
- * @author yegk7
+ * @author wangshyi
  */
 @Data
 public class SignUpEvent {

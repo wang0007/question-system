@@ -6,8 +6,8 @@ import com.neuq.question.web.rest.management.conference.signup.SignUpInvitationC
 import java.util.List;
 
 /**
- * @author yegk7
- * @since 2018/7/13 18:20
+ * @author wangshyi
+ * @since 2018/11/13 18:20
  */
 public interface SignUpInvitationCodeRepository {
 

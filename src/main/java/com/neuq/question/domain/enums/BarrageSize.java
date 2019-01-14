@@ -1,8 +1,8 @@
 package com.neuq.question.domain.enums;
 
 /**
- * @author yegk7
- * @since 2018/8/5 15:39
+ * @author wangshyi
+ * @since 2018/11/5 15:39
  */
 public enum BarrageSize {
 

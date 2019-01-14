@@ -8,8 +8,8 @@ import com.neuq.question.domain.enums.OperationType;
 import java.util.List;
 
 /**
- * @author yegk7
- * @date 2018/9/10 16:39
+ * @author wangshyi
+ * @date 2018/11/10 16:39
  */
 public interface OperationLogService {
 

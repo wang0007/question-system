@@ -7,7 +7,7 @@ import lombok.experimental.FieldNameConstants;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 /**
- * @author yegk7
+ * @author wangshyi
  */
 @Data
 @EqualsAndHashCode(callSuper = true)

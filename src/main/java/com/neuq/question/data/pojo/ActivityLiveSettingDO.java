@@ -12,7 +12,7 @@ import java.util.Date;
 /**
  * 直播设置
  *
- * @author liuhaoi
+ * @author v
  */
 @Document(collection = "activity.live.setting")
 @Data

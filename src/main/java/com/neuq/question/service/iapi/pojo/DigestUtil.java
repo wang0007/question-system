@@ -21,7 +21,7 @@ import java.security.NoSuchAlgorithmException;
 /**
  * 简单的摘要计算工具类
  *
- * @author liuhaoi
+ * @author wangshyi
  */
 @Slf4j
 public class DigestUtil {

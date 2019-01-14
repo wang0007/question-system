@@ -6,8 +6,8 @@ import com.neuq.question.domain.enums.SignInType;
 import com.neuq.question.service.events.signin.pojo.SignInEvent;
 
 /**
- * @author yegk7
- * @since 2018/7/17 19:24
+ * @author wangshyi
+ * @since 2018/11/17 19:24
  */
 public interface ActivitySignInService {
 

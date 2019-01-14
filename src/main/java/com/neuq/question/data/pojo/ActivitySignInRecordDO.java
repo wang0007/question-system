@@ -11,7 +11,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 /**
  * 签到记录
  *
- * @author liuhaoi
+ * @author wangshyi
  */
 @Document(collection = "activity.sign_in.record")
 @Data

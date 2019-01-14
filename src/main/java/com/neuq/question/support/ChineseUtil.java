@@ -4,7 +4,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * @author yegk7
+ * @author wangshyi
  */
 public class ChineseUtil {
 

@@ -23,7 +23,7 @@ import java.util.List;
 /**
  * 签到记录相关接口
  *
- * @author liuhaoi
+ * @author wangshyi
  */
 @Slf4j
 @RestController

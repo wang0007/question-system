@@ -3,7 +3,7 @@ package com.neuq.question.domain.enums;
 /**
  * 签到范围
  *
- * @author liuhaoi
+ * @author wangshyi
  */
 
 public enum SignInScope {

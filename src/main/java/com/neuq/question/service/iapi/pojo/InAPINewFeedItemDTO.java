@@ -15,7 +15,7 @@ package com.neuq.question.service.iapi.pojo;
         import java.util.stream.Collectors;
 
 /**
- * @author liuhaoi
+ * @author wangshyi
  */
         @Data
         public class InAPINewFeedItemDTO {

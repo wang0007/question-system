@@ -24,7 +24,7 @@ import java.util.List;
 /**
  * 动态接口
  *
- * @author liuhaoi
+ * @author wangshyi
  */
 @Api(description = "发言上墙相关接口")
 @Slf4j

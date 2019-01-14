@@ -5,8 +5,8 @@ import com.neuq.question.data.pojo.ActivityBarrageSettingDO;
 import com.neuq.question.web.rest.management.barrage.ActivityBarrageSettingController;
 
 /**
- * @author yegk7
- * @since 2018/8/5 16:37
+ * @author wangshyi
+ * @since 2018/11/5 16:37
  */
 public interface ActivityBarrageSettingRepository {
 

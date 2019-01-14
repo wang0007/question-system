@@ -3,7 +3,7 @@ package com.neuq.question.web.rest.pojo;
 import lombok.Data;
 
 /**
- * @author liuhaoi
+ * @author wangshyi
  */
 @Data
 public class ExcelImportResult {

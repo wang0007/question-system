@@ -13,8 +13,8 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 /**
- * @author yegk7
- * @date 2018/9/11 11:04
+ * @author wangshyi
+ * @date 2018/11/11 11:04
  */
 @Repository
 public class OperationLogRepositoryImpl extends AbstractMongoRepository<OperationLogDO> implements OperationLogRepository {

@@ -4,7 +4,7 @@ package com.neuq.question.service;
 import com.neuq.question.data.pojo.ConferenceAppDO;
 
 /**
- * @author liuhaoi
+ * @author wangshyi
  */
 public interface ConferenceAppService {
 

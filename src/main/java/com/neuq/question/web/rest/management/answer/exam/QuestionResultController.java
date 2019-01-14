@@ -12,7 +12,7 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 /**
- * @author yegk7
+ * @author wangshyi
  */
 @RestController
 @RequestMapping(value = "rest/v1/answer/question/result/{examId}")

@@ -26,7 +26,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Set;
 
 /**
- * @author liuhaoi
+ * @author wangshyi
  */
 @Api(value = "移动端-大会活动签到接口", description = "移动端-大会活动签到接口")
 @Slf4j

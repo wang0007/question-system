@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * 签到记录表
  *
- * @author liuhaoi
+ * @author wangshyi
  */
 public interface SignUpRecordRepository {
 

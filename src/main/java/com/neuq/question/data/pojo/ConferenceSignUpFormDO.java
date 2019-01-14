@@ -14,7 +14,7 @@ import java.util.Map;
 /**
  * 大会报名表格设置
  *
- * @author liuhaoi
+ * @author wangshyi
  */
 @Document(collection = "activity.sign_up.form")
 @Data

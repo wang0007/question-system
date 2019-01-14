@@ -25,8 +25,8 @@ import java.util.List;
 /**
  * 报名导出接口
  *
- * @author yegk7
- * @date 2018/9/4 10:58
+ * @author wangshyi
+ * @date 2018/11/4 10:58
  */
 @Slf4j
 @RestController

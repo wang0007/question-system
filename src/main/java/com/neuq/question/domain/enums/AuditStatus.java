@@ -3,7 +3,7 @@ package com.neuq.question.domain.enums;
 /**
  * 审核状态
  *
- * @author liuhaoi
+ * @author wangshyi
  */
 public enum AuditStatus {
 

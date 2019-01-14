@@ -1,7 +1,7 @@
 package com.neuq.question.domain.enums;
 
 /**
- * @author yegk7
+ * @author wangshyi
  */
 public enum ExamType {
     /**

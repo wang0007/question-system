@@ -19,7 +19,7 @@ import static com.neuq.question.service.impl.ShortUrlServiceImpl.SHORT_URL_PREFI
 /**
  * 用户信息相关接口
  *
- * @author yaoshw@yonyou.com
+ * @author wangshyi
  */
 @Api(value = "短连接服务", description = "短连接服务")
 @Slf4j

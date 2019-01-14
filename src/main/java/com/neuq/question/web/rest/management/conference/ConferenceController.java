@@ -29,7 +29,7 @@ import java.util.*;
 /**
  * 大会接口
  *
- * @author liuhaoi
+ * @author wangshyi
  */
 @Slf4j
 @RestController

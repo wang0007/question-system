@@ -4,7 +4,7 @@ package com.neuq.question.service;
 import com.neuq.question.web.rest.pojo.ExcelImportResult;
 
 /**
- * @author liuhaoi
+ * @author wangshyi
  */
 public interface ConferenceGuestService {
 

@@ -11,7 +11,7 @@ import com.neuq.question.service.iapi.pojo.InAPIResponse;
 import org.springframework.http.ResponseEntity;
 
 /**
- * @author liuhaoi
+ * @author wangshyi
  */
 public interface InAPIResponseChecker {
 

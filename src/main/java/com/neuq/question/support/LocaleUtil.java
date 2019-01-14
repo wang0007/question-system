@@ -4,7 +4,7 @@ import com.neuq.question.data.pojo.common.BasicDO;
 import org.springframework.context.i18n.LocaleContextHolder;
 
 /**
- * @author yegk7
+ * @author wangshyi
  * @date 2018/8/28 14:23
  */
 public class LocaleUtil {

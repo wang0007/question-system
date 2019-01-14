@@ -31,7 +31,7 @@ import java.util.stream.Collectors;
 /**
  * 大会活动接口
  *
- * @author liuhaoi
+ * @author wangshyi
  */
 @Slf4j
 @RestController

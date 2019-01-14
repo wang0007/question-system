@@ -4,7 +4,7 @@ import com.neuq.question.data.pojo.ConferenceActivityDO;
 import lombok.Data;
 
 /**
- * @author liuhaoi
+ * @author wangshyi
  */
 @Data
 public class ActivityCreateEvent {

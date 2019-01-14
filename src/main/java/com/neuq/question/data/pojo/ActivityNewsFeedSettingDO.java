@@ -10,7 +10,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 /**
  * 发言上墙设置
  *
- * @author liuhaoi
+ * @author wangshyi
  */
 @Document(collection = "activity.feed.setting")
 @Data

@@ -5,7 +5,7 @@ import lombok.experimental.FieldNameConstants;
 import org.springframework.data.annotation.Id;
 
 /**
- * @author yegk7
+ * @author wangshyi
  */
 @Data
 @FieldNameConstants

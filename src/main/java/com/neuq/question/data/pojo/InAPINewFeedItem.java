@@ -1,19 +1,16 @@
 package com.neuq.question.data.pojo;
 
-/**
- * @author wangshyi
- * @date 2019/1/11  15:24
- */
-
 import lombok.Data;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.Date;
 import java.util.List;
 
 /**
- * @author liuhaoi
+ * @author wangshyi
  */
 @Data
+@Document(collection = "user.item")
 public class InAPINewFeedItem {
 
     private String id;

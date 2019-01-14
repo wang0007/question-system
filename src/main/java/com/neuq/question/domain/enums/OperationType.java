@@ -1,8 +1,8 @@
 package com.neuq.question.domain.enums;
 
 /**
- * @author yegk7
- * @date 2018/9/11 10:45
+ * @author wangshyi
+ * @date 2018/11/11 10:45
  */
 public enum OperationType {
 

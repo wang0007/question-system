@@ -19,7 +19,7 @@ import java.util.Set;
 /**
  * 大会数据操作类
  *
- * @author liuhaoi
+ * @author wangshyi
  */
 @Repository
 public class ConferenceRepositoryImpl extends AbstractMongoRepository<ConferenceDO> implements ConferenceRepository {

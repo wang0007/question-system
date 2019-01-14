@@ -4,8 +4,8 @@ import com.neuq.question.data.pojo.ActivityNewsFeedSettingDO;
 import com.neuq.question.web.rest.management.feed.NewsFeedSettingController;
 
 /**
- * @author yegk7
- * @date 2018/8/30 11:07
+ * @author wangshyi
+ * @date 2018/11/30 11:07
  */
 public interface ActivityNewsFeedSettingRepository {
 

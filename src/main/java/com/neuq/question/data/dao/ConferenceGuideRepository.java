@@ -7,7 +7,7 @@ import java.util.Collection;
 import java.util.List;
 
 /**
- * @author liuhaoi
+ * @author wangshyi
  */
 public interface ConferenceGuideRepository {
 

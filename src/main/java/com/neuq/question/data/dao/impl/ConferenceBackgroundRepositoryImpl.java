@@ -17,8 +17,8 @@ import org.springframework.stereotype.Repository;
 import java.util.UUID;
 
 /**
- * @author yegk7
- * @since 2018/7/30 19:21
+ * @author wangshyi
+ * @since 2018/11/30 19:21
  */
 @Slf4j
 @Repository

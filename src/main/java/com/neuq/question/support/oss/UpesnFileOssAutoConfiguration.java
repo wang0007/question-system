@@ -1,9 +1,6 @@
 package com.neuq.question.support.oss;
 
-/**
- * @author wangshyi
- * @date 2018/12/29  10:46
- */
+
 
 
 import com.neuq.question.support.oss.domain.FileStorageServiceOSSImpl;
@@ -20,7 +17,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @author liuhaoi
+ * @author wangshyi
+ * @date 2018/12/29  10:46
  */
 @Configuration
 @Slf4j

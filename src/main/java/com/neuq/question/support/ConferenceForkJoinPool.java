@@ -4,7 +4,7 @@ import com.neuq.question.domain.excal.support.CommonUpesnForkJoinPool;
 import org.springframework.stereotype.Component;
 
 /**
- * @author liuhaoi
+ * @author wangshyi
  */
 @Component
 public class ConferenceForkJoinPool extends CommonUpesnForkJoinPool {

@@ -5,8 +5,8 @@ import com.neuq.question.data.pojo.common.ConferenceBackgroundDO;
 import com.neuq.question.domain.enums.BackgroundType;
 
 /**
- * @author yegk7
- * @since 2018/7/30 19:21
+ * @author wangshyi
+ * @since 2018/11/30 19:21
  */
 public interface ConferenceBackgroundRepository {
 

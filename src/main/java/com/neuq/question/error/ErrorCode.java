@@ -4,8 +4,8 @@ package com.neuq.question.error;
 /**
  * 错误码记录表
  *
- * @author yegk7
- * @date 2018/8/29 19:18
+ * @author wangshyi
+ * @date 2018/11/29 19:18
  */
 public class ErrorCode {
 

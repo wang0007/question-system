@@ -8,7 +8,7 @@ import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 /**
- * @author liuhaoi
+ * @author wangshyi
  */
 @Document(collection = "ai.face.conference.setting")
 @Data

@@ -9,7 +9,7 @@ import lombok.Data;
 import org.apache.commons.lang3.StringUtils;
 
 /**
- * @author liuhaoi
+ * @author wangshyi
  */
 @Data
 public class SignInEvent {

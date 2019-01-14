@@ -24,7 +24,7 @@ import java.util.List;
 import java.util.UUID;
 
 /**
- * @author yegk7
+ * @author wangshyi
  */
 @RestController
 @RequestMapping(value = "rest/v1/answer/exam")

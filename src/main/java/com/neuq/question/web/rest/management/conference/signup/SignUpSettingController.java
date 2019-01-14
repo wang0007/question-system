@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 /**
  * 报名设置接口
  *
- * @author liuhaoi
+ * @author wangshyi
  */
 @Slf4j
 @RestController

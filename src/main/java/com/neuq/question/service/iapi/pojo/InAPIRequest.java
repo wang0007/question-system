@@ -10,7 +10,7 @@ import lombok.Data;
 import java.util.Map;
 
 /**
- * @author liuhaoi
+ * @author wangshyi
  */
 @Data
 public class InAPIRequest {

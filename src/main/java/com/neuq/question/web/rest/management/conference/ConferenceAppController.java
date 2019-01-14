@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.*;
 /**
  * 大会活动接口
  *
- * @author liuhaoi
+ * @author wangshyi
  */
 @Api(value = "大会应用管理接口", description = "大会应用管理接口")
 @Slf4j

@@ -6,7 +6,7 @@ import com.neuq.question.web.rest.management.conference.ConferenceController;
 import java.util.List;
 
 /**
- * @author liuhaoi
+ * @author wangshyi
  */
 public interface ConferenceService {
 

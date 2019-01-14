@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.*;
 /**
  * 活动签到管理
  *
- * @author liuhaoi
+ * @author wangshyi
  */
 @Slf4j
 @RestController

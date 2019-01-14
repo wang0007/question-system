@@ -12,7 +12,7 @@ import java.util.Date;
 /**
  * 活动通用属性
  *
- * @author liuhaoi
+ * @author wangshyi
  */
 @Document(collection = "activity")
 @Data

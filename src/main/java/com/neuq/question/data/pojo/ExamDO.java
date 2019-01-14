@@ -11,7 +11,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import java.util.Date;
 
 /**
- * @author yegk7
+ * @author wangshyi
  */
 
 @Data

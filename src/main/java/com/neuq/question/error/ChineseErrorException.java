@@ -2,7 +2,7 @@ package com.neuq.question.error;
 
 
 /**
- * @author yegk7
+ * @author wangshyi
  */
 public class ChineseErrorException extends ECException {
     public ChineseErrorException(String message) {

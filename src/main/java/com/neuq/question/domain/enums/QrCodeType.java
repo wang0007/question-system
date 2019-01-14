@@ -1,8 +1,8 @@
 package com.neuq.question.domain.enums;
 
 /**
- * @author yegk7
- * @since 2018/8/3 11:26
+ * @author wangshyi
+ * @since 2018/11/3 11:26
  */
 public enum QrCodeType {
     /**

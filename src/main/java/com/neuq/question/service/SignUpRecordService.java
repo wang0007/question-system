@@ -6,8 +6,8 @@ import com.neuq.question.domain.enums.AuditStatus;
 import java.util.List;
 
 /**
- * @author yegk7
- * @since 2018/7/16 20:03
+ * @author wangshyi
+ * @since 2018/11/16 20:03
  */
 public interface SignUpRecordService {
 
