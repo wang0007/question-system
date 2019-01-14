@@ -30,7 +30,7 @@ public class ActivityNewsFeedRecordDO extends AbstractActivity {
     public static final String FIELD_FEED_CONTENT = "feed.content";
     public static final String FIELD_AUDIT_STATUS = "auditStatus";
 
-    private InAPIUser feed;
+    private InAPINewFeedItem feed;
 
     private AuditStatus auditStatus;
 

@@ -827,17 +827,6 @@ db.getCollection('conference.app').update({
         "name": "我的信息",
         "enable": false,
         "url": "#/conferenceMy?conferenceId=${conferenceId}"
-    },  {
-        "appId": "_lottery",
-        "icon": "http://140.143.133.139/files/app/app_lottery.png",
-        "i18nName": {
-            "zh_CN": "大会奖品",
-            "zh_TW": "大會獎品",
-            "en_US": "Lucky Draw"
-        },
-        "name": "大会奖品",
-        "enable": false,
-        "url": "#/conferencePrize?conferenceId=${conferenceId}"
     }, {
         "appId": "_signin",
         "icon": "http://140.143.133.139/files/app/app_signin.png",
@@ -850,49 +839,27 @@ db.getCollection('conference.app').update({
         "enable": false,
         "url": "#/conferenceSign"
     }, {
-        "appId": "_agenda",
+        "appId": "_rank",
         "icon": "http://140.143.133.139/files/app/app_agenda.png",
         "i18nName": {
-            "zh_CN": "大会议程",
-            "zh_TW": "大會議程",
+            "zh_CN": "排行榜",
+            "zh_TW": "排行榜",
             "en_US": "Agenda"
         },
-        "name": "大会议程",
+        "name": "答题排行榜",
         "enable": false,
-        "url": "#/conferenceAgenda?conferenceId=${conferenceId}"
+        "url": "#/question/rank"
     }, {
-        "appId": "_signin_proxy",
-        "icon": "http://140.143.133.139/files/app//app_signin_proxy.png",
-        "i18nName": {
-            "zh_CN": "帮他签到",
-            "zh_TW": "幫他簽到",
-            "en_US": "Help Others"
-        },
-        "name": "帮他签到",
-        "enable": false,
-        "url": "#/conferenceHelpSign"
-    }, {
-        "appId": "_collect_face",
+        "appId": "_question",
         "icon": "http://140.143.133.139/files/app/app_collect_face.png",
         "i18nName": {
             "zh_CN": "答题闯关",
             "zh_TW": "答题闯关",
             "en_US": "question"
         },
-        "name": "集颜值",
+        "name": "答题闯关",
         "enable": false,
-        "url": "http://172.20.1.177:6058/conference/app/assets/activity/scan.html?conferenceId=${conferenceId}"
-    }, {
-        "appId": "_live",
-        "icon": "http://140.143.133.139/files/app/app_live.png",
-        "i18nName": {
-            "zh_CN": "排行榜",
-            "zh_TW": "排行榜",
-            "en_US": "Live"
-        },
-        "name": "排行榜",
-        "enable": false,
-        "url": "#/conferenceVideo?conferenceId=${conferenceId}"
+        "url": "#/question/list"
     },{
         "appId": "_barrage",
         "icon": "http://140.143.133.139/files/app//app_barrage.png",

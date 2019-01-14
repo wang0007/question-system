@@ -51,4 +51,11 @@ public class InAPIUser {
      * 0 男 1女 2 未知 "保密"
      */
     private String sex;
+
+
+    private Boolean hasFile;
+
+    private InAPINewFeedItem.MemberInfo memberInfo;
+
+    private InAPINewFeedItem.Files files;
 }

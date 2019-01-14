@@ -1,6 +1,5 @@
 package com.neuq.question.web.rest.client.common;
 
-
 import com.neuq.question.data.dao.ConferenceRepository;
 import com.neuq.question.data.pojo.ConferenceDO;
 import com.neuq.question.service.InAPISmsService;
@@ -14,7 +13,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 import java.util.Map;
-
 
 /**
  * 短信相关接口
@@ -48,7 +46,7 @@ public class SmsController {
         String verifyCode = RandomStringUtils.randomNumeric(4);
         // 将验证码存入redis
         String key = buildSignUpKey(conferenceId, mobile);
-        verifyCodeService.saveToRedis(key, verifyCode, 30);
+        verifyCodeService.saveToRedis(key, verifyCode);
 
         Map<String, String> data = new HashMap<>(5);
         data.put("mettingName", conferenceDO.getName());

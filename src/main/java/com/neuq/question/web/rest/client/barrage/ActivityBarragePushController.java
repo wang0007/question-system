@@ -6,11 +6,14 @@ import com.neuq.question.data.pojo.InAPIUser;
 import com.neuq.question.service.ActivityBarrageRecordService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import javafx.print.Printer;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
+
+import static net.bytebuddy.implementation.FixedValue.self;
 
 /**
  * @author sunhuih
@@ -48,4 +51,6 @@ public class ActivityBarragePushController {
     public static class BarrageContentDTO {
         private String content;
     }
+
+
 }

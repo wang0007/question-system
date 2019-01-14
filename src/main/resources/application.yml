@@ -47,11 +47,6 @@ spring:
     basename: messages
 
 
-
-
-
-
-
 yonyoucloud:
   upesn:
     app-name: conference

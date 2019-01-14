@@ -52,7 +52,7 @@ public class UserInfoController {
      */
     private static String buildUrl( String memberId) {
 
-        String userInfoUrl = "/rest/s/%s/%s";
+        String userInfoUrl = "/rest/s/%s";
         return String.format(userInfoUrl, memberId);
     }
 

@@ -1,5 +1,7 @@
 package com.neuq.question.service.impl;
 
+import com.neuq.question.data.dao.RedisDoRepository;
+import com.neuq.question.data.pojo.RedisDo;
 import com.neuq.question.service.VerifyCodeService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -19,10 +21,23 @@ public class VerifyCodeServiceImpl implements VerifyCodeService {
 
     private final StringRedisTemplate redisTemplate;
 
-    @Override
-    public void saveToRedis(String key, String verifyCode, int time) {
+    private final RedisDoRepository redisDoRepository;
 
-        redisTemplate.opsForValue().set(key, verifyCode, time * 60, TimeUnit.SECONDS);
+    @Override
+    public void saveToRedis(String key, String verifyCode) {
+        RedisDo redisDo = new RedisDo();
+        redisDo.setKey(key);
+        redisDo.setValue(verifyCode);
+        RedisDo redisDo1 = redisDoRepository.queryByKey(key);
+        if (redisDo1 == null){
+
+
+            redisDoRepository.saveDo(redisDo);
+            return;
+        }
+
+        redisDoRepository.update(redisDo);
+
 
     }
 
@@ -30,7 +45,12 @@ public class VerifyCodeServiceImpl implements VerifyCodeService {
     public Boolean verifyCodeMatch(String key, String verifyCode) {
 
         boolean equals = false;
-        String value = redisTemplate.opsForValue().get(key);
+        RedisDo redisDo = new RedisDo();
+        redisDo.setKey(key);
+        redisDo.setValue(verifyCode);
+        RedisDo redisDo1 = redisDoRepository.queryByKey(key);
+
+        String value = redisDo.getValue();
         if (value != null && value.equals(verifyCode)) {
             equals = true;
         }

@@ -11,9 +11,8 @@ public interface VerifyCodeService {
      *
      * @param key        存入redis对应的key
      * @param verifyCode 验证码
-     * @param time       有效时间（分钟）
      */
-    void saveToRedis(String key, String verifyCode, int time);
+    void saveToRedis(String key, String verifyCode);
 
     /**
      * 判断验证码是否正确
