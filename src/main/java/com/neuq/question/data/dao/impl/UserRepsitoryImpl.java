@@ -78,4 +78,13 @@ public class UserRepsitoryImpl extends AbstractMongoRepository<InAPIUser> implem
 
         return template.findAll(clazz);
     }
+
+    @Override
+    public boolean queryByLoginName(String loginName) {
+
+        Criteria criteria = Criteria.where(InAPIUser.FIELD_LOGIN_NAME).is(loginName);
+        List<InAPIUser> inAPIUsers = template.find(Query.query(criteria), clazz);
+        return inAPIUsers.size() != 0;
+
+    }
 }

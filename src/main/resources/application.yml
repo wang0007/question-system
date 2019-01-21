@@ -59,7 +59,7 @@ yonyoucloud:
         access-secret: iA3RlgURhpDnnnvWixo0VX8PrGbrvj
         download-url-prefix: https://conference-system.oss-cn-beijing.aliyuncs.com
     conference:
-      host: http://140.143.133.139:8000
+      host: http://140.143.133.139:8080
       web-prefix: web/index.html
       app-prefix: app/index.html
       app-id: 1215

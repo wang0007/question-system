@@ -45,4 +45,11 @@ public interface UserRepsitory {
      */
     List<InAPIUser> queryAll();
 
+
+    /**
+     * 判断用户是否存在
+     * @param loginName
+     * @return true 存在;false 不存在
+     */
+    boolean queryByLoginName(String loginName);
 }

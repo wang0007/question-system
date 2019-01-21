@@ -1,9 +1,6 @@
 package com.neuq.question.data.pojo;
 
-import com.neuq.question.data.pojo.common.BasicDO;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
 import lombok.experimental.FieldNameConstants;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

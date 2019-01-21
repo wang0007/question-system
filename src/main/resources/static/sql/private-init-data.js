@@ -45,8 +45,8 @@ db.getCollection('activity.barrage.setting').update({
     "_class": "com.neuq.question.data.pojo.ActivityBarrageSettingDO",
     "barrageSize": "LARGE",
     "barrageSpeed": "FAST",
-    "backgroundUrl": "127.0.0.1:8080/assest/barrage/setting.jpg",
-    "thumbBackground": "127.0.0.1:8080/assest/barrage/setting_thumb.jpg",
+    "backgroundUrl": "123.206.41.246/assest/barrage/setting.jpg",
+    "thumbBackground": "123.206.41.246/assest/barrage/setting_thumb.jpg",
     "circulation": true,
     "fullScreen": true
 }, {
@@ -60,8 +60,8 @@ db.getCollection('activity.barrage.setting').update({
     "_class": "com.neuq.question.data.pojo.ActivityBarrageSettingDO",
     "barrageSize": "LARGE",
     "barrageSpeed": "FAST",
-    "backgroundUrl": "127.0.0.1:8080/assest/barrage/setting.jpg",
-    "thumbBackground": "127.0.0.1:8080/assest/barrage/setting_thumb.jpg",
+    "backgroundUrl": "123.206.41.246/assest/barrage/setting.jpg",
+    "thumbBackground": "123.206.41.246/assest/barrage/setting_thumb.jpg",
     "circulation": true,
     "fullScreen": true
 }, {
@@ -75,8 +75,8 @@ db.getCollection('activity.barrage.setting').update({
     "_class": "com.neuq.question.data.pojo.ActivityBarrageSettingDO",
     "barrageSize": "LARGE",
     "barrageSpeed": "FAST",
-    "backgroundUrl": "127.0.0.1:8080/assest/barrage/setting.jpg",
-    "thumbBackground": "127.0.0.1:8080/assest/barrage/setting_thumb.jpg",
+    "backgroundUrl": "123.206.41.246/assest/barrage/setting.jpg",
+    "thumbBackground": "123.206.41.246/assest/barrage/setting_thumb.jpg",
     "circulation": true,
     "fullScreen": true
 }, {
@@ -90,8 +90,8 @@ db.getCollection('activity.feed.setting').update({
     "activityId": "__default::zh_CN",
     "conferenceId": "__default::zh_CN",
     "_class": "com.neuq.question.data.pojo.ActivityNewsFeedSettingDO",
-    "background": "127.0.0.1:8080/assest/feed/setting.jpg",
-    "thumbBackground": "127.0.0.1:8080/assest/feed/setting_thumb.jpg"
+    "background": "123.206.41.246/assest/feed/setting.jpg",
+    "thumbBackground": "123.206.41.246/assest/feed/setting_thumb.jpg"
 }, {
     upsert: true
 });
@@ -103,8 +103,8 @@ db.getCollection('activity.feed.setting').update({
     "activityId": "__default::en_US",
     "conferenceId": "__default::en_US",
     "_class": "com.neuq.question.data.pojo.ActivityNewsFeedSettingDO",
-    "background": "127.0.0.1:8080/assest/feed/setting.jpg",
-    "thumbBackground": "127.0.0.1:8080/assest/feed/setting_thumb.jpg"
+    "background": "123.206.41.246/assest/feed/setting.jpg",
+    "thumbBackground": "123.206.41.246/assest/feed/setting_thumb.jpg"
 }, {
     upsert: true
 });
@@ -116,8 +116,8 @@ db.getCollection('activity.feed.setting').update({
     "activityId": "__default::zh_TW",
     "conferenceId": "__default::zh_TW",
     "_class": "com.neuq.question.data.pojo.ActivityNewsFeedSettingDO",
-    "background": "127.0.0.1:8080/assest/feed/setting.jpg",
-    "thumbBackground": "127.0.0.1:8080/assest/feed/setting_thumb.jpg"
+    "background": "123.206.41.246/assest/feed/setting.jpg",
+    "thumbBackground": "123.206.41.246/assest/feed/setting_thumb.jpg"
 }, {
     upsert: true
 });
@@ -168,8 +168,8 @@ db.getCollection('activity.lottery.setting').update({
     "_class": "com.neuq.question.data.pojo.ActivityLotterySettingDO",
     "projection": {
         "projectionType": "TURN_TABLE",
-        "projectionBackground": "127.0.0.1:8080/assest/lottery/setting.jpg",
-        "thumbBackground": "127.0.0.1:8080/assest/lottery/setting_thumb.jpg"
+        "projectionBackground": "123.206.41.246/assest/lottery/setting.jpg",
+        "thumbBackground": "123.206.41.246/assest/lottery/setting_thumb.jpg"
     },
     "scopeSetting": {
         "scope": "SIGN_IN"
@@ -190,8 +190,8 @@ db.getCollection('activity.lottery.setting').update({
     "_class": "com.neuq.question.data.pojo.ActivityLotterySettingDO",
     "projection": {
         "projectionType": "TURN_TABLE",
-        "projectionBackground": "127.0.0.1:8080/assest/lottery/setting.jpg",
-        "thumbBackground": "127.0.0.1:8080/assest/lottery/setting_thumb.jpg"
+        "projectionBackground": "123.206.41.246/assest/lottery/setting.jpg",
+        "thumbBackground": "123.206.41.246/assest/lottery/setting_thumb.jpg"
     },
     "scopeSetting": {
         "scope": "SIGN_IN"
@@ -212,8 +212,8 @@ db.getCollection('activity.lottery.setting').update({
     "_class": "com.neuq.question.data.pojo.ActivityLotterySettingDO",
     "projection": {
         "projectionType": "TURN_TABLE",
-        "projectionBackground": "127.0.0.1:8080/assest/lottery/setting.jpg",
-        "thumbBackground": "127.0.0.1:8080/assest/lottery/setting_thumb.jpg"
+        "projectionBackground": "123.206.41.246/assest/lottery/setting.jpg",
+        "thumbBackground": "123.206.41.246/assest/lottery/setting_thumb.jpg"
     },
     "scopeSetting": {
         "scope": "SIGN_IN"
@@ -239,8 +239,8 @@ db.getCollection('activity.sign_in.setting').update({
     "scope": "SIGNUP_AND_GUEST",
     "projection": {
         "projectionType": "TWOD",
-        "projectionBackground": "127.0.0.1:8080/assest/sign_in/setting.jpg",
-        "thumbBackground": "127.0.0.1:8080/assest/sign_in/setting_thumb.jpg"
+        "projectionBackground": "123.206.41.246/assest/sign_in/setting.jpg",
+        "thumbBackground": "123.206.41.246/assest/sign_in/setting_thumb.jpg"
     },
     "joinGroupSetting": {
         "enable": false
@@ -266,8 +266,8 @@ db.getCollection('activity.sign_in.setting').update({
     "scope": "SIGNUP_AND_GUEST",
     "projection": {
         "projectionType": "TWOD",
-        "projectionBackground": "127.0.0.1:8080/assest/sign_in/setting.jpg",
-        "thumbBackground": "127.0.0.1:8080/assest/sign_in/setting_thumb.jpg"
+        "projectionBackground": "123.206.41.246/assest/sign_in/setting.jpg",
+        "thumbBackground": "123.206.41.246/assest/sign_in/setting_thumb.jpg"
     },
     "joinGroupSetting": {
         "enable": false
@@ -293,8 +293,8 @@ db.getCollection('activity.sign_in.setting').update({
     "scope": "SIGNUP_AND_GUEST",
     "projection": {
         "projectionType": "TWOD",
-        "projectionBackground": "127.0.0.1:8080/assest/sign_in/setting.jpg",
-        "thumbBackground": "127.0.0.1:8080/assest/sign_in/setting_thumb.jpg"
+        "projectionBackground": "123.206.41.246/assest/sign_in/setting.jpg",
+        "thumbBackground": "123.206.41.246/assest/sign_in/setting_thumb.jpg"
     },
     "joinGroupSetting": {
         "enable": false
@@ -420,40 +420,40 @@ db.getCollection('conference.background').update({
     "backgroundType": "COMMON",
     "background": [{
         "backgroundId": "_defaultid1",
-        "background": "127.0.0.1:8080/assest/background/defaultid1.jpg",
-        "thumbBackground": "127.0.0.1:8080/assest/background/defaultid1_thumb.jpg"
+        "background": "123.206.41.246/assest/background/defaultid1.jpg",
+        "thumbBackground": "123.206.41.246/assest/background/defaultid1_thumb.jpg"
     }, {
         "backgroundId": "_defaultid2",
-        "background": "127.0.0.1:8080/assest/background/defaultid2.jpg",
-        "thumbBackground": "127.0.0.1:8080/assest/background/defaultid2_thumb.jpg"
+        "background": "123.206.41.246/assest/background/defaultid2.jpg",
+        "thumbBackground": "123.206.41.246/assest/background/defaultid2_thumb.jpg"
     }, {
         "backgroundId": "_defaultid3",
-        "background": "127.0.0.1:8080/assest/background/defaultid3.jpg",
-        "thumbBackground": "127.0.0.1:8080/assest/background/defaultid3_thumb.jpg"
+        "background": "123.206.41.246/assest/background/defaultid3.jpg",
+        "thumbBackground": "123.206.41.246/assest/background/defaultid3_thumb.jpg"
     }, {
         "backgroundId": "_defaultid4",
-        "background": "127.0.0.1:8080/assest/background/defaultid4.jpg",
-        "thumbBackground": "127.0.0.1:8080/assest/background/defaultid4_thumb.jpg"
+        "background": "123.206.41.246/assest/background/defaultid4.jpg",
+        "thumbBackground": "123.206.41.246/assest/background/defaultid4_thumb.jpg"
     }, {
         "backgroundId": "_defaultid5",
-        "background": "127.0.0.1:8080/assest/background/defaultid5.jpg",
-        "thumbBackground": "127.0.0.1:8080/assest/background/defaultid5_thumb.jpg"
+        "background": "123.206.41.246/assest/background/defaultid5.jpg",
+        "thumbBackground": "123.206.41.246/assest/background/defaultid5_thumb.jpg"
     }, {
         "backgroundId": "_defaultid6",
-        "background": "127.0.0.1:8080/assest/background/defaultid6.jpg",
-        "thumbBackground": "127.0.0.1:8080/assest/background/defaultid6_thumb.jpg"
+        "background": "123.206.41.246/assest/background/defaultid6.jpg",
+        "thumbBackground": "123.206.41.246/assest/background/defaultid6_thumb.jpg"
     }, {
         "backgroundId": "_defaultid7",
-        "background": "127.0.0.1:8080/assest/background/defaultid7.jpg",
-        "thumbBackground": "127.0.0.1:8080/assest/background/defaultid7_thumb.jpg"
+        "background": "123.206.41.246/assest/background/defaultid7.jpg",
+        "thumbBackground": "123.206.41.246/assest/background/defaultid7_thumb.jpg"
     }, {
         "backgroundId": "_defaultid8",
-        "background": "127.0.0.1:8080/assest/background/defaultid8.jpg",
-        "thumbBackground": "127.0.0.1:8080/assest/background/defaultid8_thumb.jpg"
+        "background": "123.206.41.246/assest/background/defaultid8.jpg",
+        "thumbBackground": "123.206.41.246/assest/background/defaultid8_thumb.jpg"
     }, {
         "backgroundId": "_defaultid9",
-        "background": "127.0.0.1:8080/assest/background/defaultid9.jpg",
-        "thumbBackground": "127.0.0.1:8080/assest/background/defaultid9_thumb.jpg"
+        "background": "123.206.41.246/assest/background/defaultid9.jpg",
+        "thumbBackground": "123.206.41.246/assest/background/defaultid9_thumb.jpg"
     }]
 }, {
     upsert: true
@@ -467,40 +467,40 @@ db.getCollection('conference.background').update({
     "backgroundType": "COMMON",
     "background": [{
         "backgroundId": "_defaultid1",
-        "background": "127.0.0.1:8080/assest/signup_background/defaultid1.jpg",
-        "thumbBackground": "127.0.0.1:8080/assest/signup_background/defaultid1_thumb.jpg"
+        "background": "123.206.41.246/assest/signup_background/defaultid1.jpg",
+        "thumbBackground": "123.206.41.246/assest/signup_background/defaultid1_thumb.jpg"
     }, {
         "backgroundId": "_defaultid2",
-        "background": "127.0.0.1:8080/assest/signup_background/defaultid2.jpg",
-        "thumbBackground": "127.0.0.1:8080/assest/signup_background/defaultid2_thumb.jpg"
+        "background": "123.206.41.246/assest/signup_background/defaultid2.jpg",
+        "thumbBackground": "123.206.41.246/assest/signup_background/defaultid2_thumb.jpg"
     }, {
         "backgroundId": "_defaultid3",
-        "background": "127.0.0.1:8080/assest/signup_background/defaultid3.jpg",
-        "thumbBackground": "127.0.0.1:8080/assest/signup_background/defaultid3_thumb.jpg"
+        "background": "123.206.41.246/assest/signup_background/defaultid3.jpg",
+        "thumbBackground": "123.206.41.246/assest/signup_background/defaultid3_thumb.jpg"
     }, {
         "backgroundId": "_defaultid4",
-        "background": "127.0.0.1:8080/assest/signup_background/defaultid4.jpg",
-        "thumbBackground": "127.0.0.1:8080/assest/signup_background/defaultid4_thumb.jpg"
+        "background": "123.206.41.246/assest/signup_background/defaultid4.jpg",
+        "thumbBackground": "123.206.41.246/assest/signup_background/defaultid4_thumb.jpg"
     }, {
         "backgroundId": "_defaultid5",
-        "background": "127.0.0.1:8080/assest/signup_background/defaultid5.jpg",
-        "thumbBackground": "127.0.0.1:8080/assest/signup_background/defaultid5_thumb.jpg"
+        "background": "123.206.41.246/assest/signup_background/defaultid5.jpg",
+        "thumbBackground": "123.206.41.246/assest/signup_background/defaultid5_thumb.jpg"
     }, {
         "backgroundId": "_defaultid6",
-        "background": "127.0.0.1:8080/assest/signup_background/defaultid6.jpg",
-        "thumbBackground": "127.0.0.1:8080/assest/signup_background/defaultid6_thumb.jpg"
+        "background": "123.206.41.246/assest/signup_background/defaultid6.jpg",
+        "thumbBackground": "123.206.41.246/assest/signup_background/defaultid6_thumb.jpg"
     }, {
         "backgroundId": "_defaultid7",
-        "background": "127.0.0.1:8080/assest/signup_background/defaultid7.jpg",
-        "thumbBackground": "127.0.0.1:8080/assest/signup_background/defaultid7_thumb.jpg"
+        "background": "123.206.41.246/assest/signup_background/defaultid7.jpg",
+        "thumbBackground": "123.206.41.246/assest/signup_background/defaultid7_thumb.jpg"
     }, {
         "backgroundId": "_defaultid8",
-        "background": "127.0.0.1:8080/assest/signup_background/defaultid8.jpg",
-        "thumbBackground": "127.0.0.1:8080/assest/signup_background/defaultid8_thumb.jpg"
+        "background": "123.206.41.246/assest/signup_background/defaultid8.jpg",
+        "thumbBackground": "123.206.41.246/assest/signup_background/defaultid8_thumb.jpg"
     }, {
         "backgroundId": "_defaultid9",
-        "background": "127.0.0.1:8080/assest/signup_background/defaultid9.jpg",
-        "thumbBackground": "127.0.0.1:8080/assest/signup_background/defaultid9_thumb.jpg"
+        "background": "123.206.41.246/assest/signup_background/defaultid9.jpg",
+        "thumbBackground": "123.206.41.246/assest/signup_background/defaultid9_thumb.jpg"
     }]
 }, {
     upsert: true
@@ -513,7 +513,7 @@ db.getCollection('conference.guide').update({
 }, {
     "_id": "0_plane::zh_CN",
     "_class": "com.neuq.question.data.pojo.ConferenceGuideDO",
-    "icon": "127.0.0.1:8080/assest/guide/guide_plane.png",
+    "icon": "123.206.41.246/assest/guide/guide_plane.png",
     "name": "接送机服务",
     "items": [],
     "conferenceId": "__default::zh_CN"
@@ -527,7 +527,7 @@ db.getCollection('conference.guide').update({
 }, {
     "_id": "1_meetingPlace::zh_CN",
     "_class": "com.neuq.question.data.pojo.ConferenceGuideDO",
-    "icon": "127.0.0.1:8080/assest/guide/guide_meetingPlace.png",
+    "icon": "123.206.41.246/assest/guide/guide_meetingPlace.png",
     "name": "会议地点",
     "items": [],
     "conferenceId": "__default::zh_CN"
@@ -541,7 +541,7 @@ db.getCollection('conference.guide').update({
 }, {
     "_id": "2_dinner::zh_CN",
     "_class": "com.neuq.question.data.pojo.ConferenceGuideDO",
-    "icon": "127.0.0.1:8080/assest/guide/guide_dinner.png",
+    "icon": "123.206.41.246/assest/guide/guide_dinner.png",
     "name": "用餐安排",
     "items": [],
     "conferenceId": "__default::zh_CN"
@@ -555,7 +555,7 @@ db.getCollection('conference.guide').update({
 }, {
     "_id": "3_stay::zh_CN",
     "_class": "com.neuq.question.data.pojo.ConferenceGuideDO",
-    "icon": "127.0.0.1:8080/assest/guide/guide_stay.png",
+    "icon": "123.206.41.246/assest/guide/guide_stay.png",
     "name": "住宿推荐",
     "items": [],
     "conferenceId": "__default::zh_CN"
@@ -569,7 +569,7 @@ db.getCollection('conference.guide').update({
 }, {
     "_id": "9_customize::zh_CN",
     "_class": "com.neuq.question.data.pojo.ConferenceGuideDO",
-    "icon": "127.0.0.1:8080/assest/guide/guide_customize.png",
+    "icon": "123.206.41.246/assest/guide/guide_customize.png",
     "name": "自定义",
     "items": [],
     "conferenceId": "__default::zh_CN"
@@ -583,7 +583,7 @@ db.getCollection('conference.guide').update({
 }, {
     "_id": "0_plane::en_US",
     "_class": "com.neuq.question.data.pojo.ConferenceGuideDO",
-    "icon": "127.0.0.1:8080/assest/guide/guide_plane.png",
+    "icon": "123.206.41.246/assest/guide/guide_plane.png",
     "name": "Arrive",
     "items": [],
     "conferenceId": "__default::en_US"
@@ -597,7 +597,7 @@ db.getCollection('conference.guide').update({
 }, {
     "_id": "1_meetingPlace::en_US",
     "_class": "com.neuq.question.data.pojo.ConferenceGuideDO",
-    "icon": "127.0.0.1:8080/assest/guide/guide_meetingPlace.png",
+    "icon": "123.206.41.246/assest/guide/guide_meetingPlace.png",
     "name": "Location",
     "items": [],
     "conferenceId": "__default::en_US"
@@ -611,7 +611,7 @@ db.getCollection('conference.guide').update({
 }, {
     "_id": "2_dinner::en_US",
     "_class": "com.neuq.question.data.pojo.ConferenceGuideDO",
-    "icon": "127.0.0.1:8080/assest/guide/guide_dinner.png",
+    "icon": "123.206.41.246/assest/guide/guide_dinner.png",
     "name": "Meals",
     "items": [],
     "conferenceId": "__default::en_US"
@@ -625,7 +625,7 @@ db.getCollection('conference.guide').update({
 }, {
     "_id": "3_stay::en_US",
     "_class": "com.neuq.question.data.pojo.ConferenceGuideDO",
-    "icon": "127.0.0.1:8080/assest/guide/guide_stay.png",
+    "icon": "123.206.41.246/assest/guide/guide_stay.png",
     "name": "Accommodation",
     "items": [],
     "conferenceId": "__default::en_US"
@@ -639,7 +639,7 @@ db.getCollection('conference.guide').update({
 }, {
     "_id": "9_customize::en_US",
     "_class": "com.neuq.question.data.pojo.ConferenceGuideDO",
-    "icon": "127.0.0.1:8080/assest/guide/guide_customize.png",
+    "icon": "123.206.41.246/assest/guide/guide_customize.png",
     "name": "Self-defined",
     "items": [],
     "conferenceId": "__default::en_US"
@@ -653,7 +653,7 @@ db.getCollection('conference.guide').update({
 }, {
     "_id": "0_plane::zh_TW",
     "_class": "com.neuq.question.data.pojo.ConferenceGuideDO",
-    "icon": "127.0.0.1:8080/assest/guide/guide_plane.png",
+    "icon": "123.206.41.246/assest/guide/guide_plane.png",
     "name": "接送機服務",
     "items": [],
     "conferenceId": "__default::zh_TW"
@@ -667,7 +667,7 @@ db.getCollection('conference.guide').update({
 }, {
     "_id": "1_meetingPlace::zh_TW",
     "_class": "com.neuq.question.data.pojo.ConferenceGuideDO",
-    "icon": "127.0.0.1:8080/assest/guide/guide_meetingPlace.png",
+    "icon": "123.206.41.246/assest/guide/guide_meetingPlace.png",
     "name": "會議地點",
     "items": [],
     "conferenceId": "__default::zh_TW"
@@ -681,7 +681,7 @@ db.getCollection('conference.guide').update({
 }, {
     "_id": "2_dinner::zh_TW",
     "_class": "com.neuq.question.data.pojo.ConferenceGuideDO",
-    "icon": "127.0.0.1:8080/assest/guide/guide_dinner.png",
+    "icon": "123.206.41.246/assest/guide/guide_dinner.png",
     "name": "用餐安排",
     "items": [],
     "conferenceId": "__default::zh_TW"
@@ -695,7 +695,7 @@ db.getCollection('conference.guide').update({
 }, {
     "_id": "3_stay::zh_TW",
     "_class": "com.neuq.question.data.pojo.ConferenceGuideDO",
-    "icon": "127.0.0.1:8080/assest/guide/guide_stay.png",
+    "icon": "123.206.41.246/assest/guide/guide_stay.png",
     "name": "住宿推薦",
     "items": [],
     "conferenceId": "__default::zh_TW"
@@ -709,7 +709,7 @@ db.getCollection('conference.guide').update({
 }, {
     "_id": "9_customize::zh_TW",
     "_class": "com.neuq.question.data.pojo.ConferenceGuideDO",
-    "icon": "127.0.0.1:8080/assest/guide/guide_customize.png",
+    "icon": "123.206.41.246/assest/guide/guide_customize.png",
     "name": "自訂",
     "items": [],
     "conferenceId": "__default::zh_TW"
@@ -723,8 +723,8 @@ db.getCollection('activity.sign_up.form').update({
     "conferenceId": "__default"
 }, {
     "conferenceId": "__default",
-    "backgroundImage": "127.0.0.1:8080/assest/sign_up/default.jpg",
-    "thumbBackground": "127.0.0.1:8080/assest/sign_up/default_thumb.jpg",
+    "backgroundImage": "123.206.41.246/assest/sign_up/default.jpg",
+    "thumbBackground": "123.206.41.246/assest/sign_up/default_thumb.jpg",
     "fields": [{
         "formFieldId": "__name",
         "label": "姓名",
@@ -788,7 +788,7 @@ db.getCollection('conference.app').update({
     "conferenceId": "__default",
     "apps": [{
         "appId": "_guide",
-        "icon": "127.0.0.1:8080/assest/app/app_guide.png",
+        "icon": "http://123.206.41.246/files/app/app_guide.png",
         "i18nName": {
             "zh_CN": "大会指南",
             "zh_TW": "大會指南",
@@ -800,7 +800,7 @@ db.getCollection('conference.app').update({
 
     }, {
         "appId": "_info",
-        "icon": "127.0.0.1:8080/assest/app/app_info.png",
+        "icon": "http://123.206.41.246/files/app/app_info.png",
         "i18nName": {
             "zh_CN": "我的信息",
             "zh_TW": "我的信息",
@@ -810,30 +810,8 @@ db.getCollection('conference.app').update({
         "enable": false,
         "url": "#/conferenceMy?conferenceId=${conferenceId}"
     }, {
-        "appId": "_live",
-        "icon": "http://140.143.133.139/files/app/app_live.png",
-        "i18nName": {
-            "zh_CN": "排行榜",
-            "zh_TW": "排行榜",
-            "en_US": "Live"
-        },
-        "name": "排行榜",
-        "enable": false,
-        "url": "#/conferenceVideo?conferenceId=${conferenceId}"
-    }, {
-        "appId": "_lottery",
-        "icon": "127.0.0.1:8080/assest/app/app_lottery.png",
-        "i18nName": {
-            "zh_CN": "大会奖品",
-            "zh_TW": "大會獎品",
-            "en_US": "Lucky Draw"
-        },
-        "name": "大会奖品",
-        "enable": false,
-        "url": "#/conferencePrize?conferenceId=${conferenceId}"
-    }, {
         "appId": "_signin",
-        "icon": "127.0.0.1:8080/assest/app/app_signin.png",
+        "icon": "http://123.206.41.246/files/app/app_signin.png",
         "i18nName": {
             "zh_CN": "大会签到",
             "zh_TW": "大會簽到",
@@ -843,41 +821,30 @@ db.getCollection('conference.app').update({
         "enable": false,
         "url": "#/conferenceSign"
     }, {
-        "appId": "_agenda",
-        "icon": "127.0.0.1:8080/assest/app/app_agenda.png",
+        "appId": "_rank",
+        "icon": "http://123.206.41.246/files/app/app_agenda.png",
         "i18nName": {
-            "zh_CN": "大会议程",
-            "zh_TW": "大會議程",
+            "zh_CN": "排行榜",
+            "zh_TW": "排行榜",
             "en_US": "Agenda"
         },
-        "name": "大会议程",
+        "name": "答题排行榜",
         "enable": false,
-        "url": "#/conferenceAgenda?conferenceId=${conferenceId}"
+        "url": "#/question/rank"
     }, {
-        "appId": "_signin_proxy",
-        "icon": "127.0.0.1:8080/assest/app/app_signin_proxy.png",
+        "appId": "_question",
+        "icon": "http://123.206.41.246/files/app/app_collect_face.png",
         "i18nName": {
-            "zh_CN": "帮他签到",
-            "zh_TW": "幫他簽到",
-            "en_US": "Help Others"
+            "zh_CN": "答题闯关",
+            "zh_TW": "答题闯关",
+            "en_US": "question"
         },
-        "name": "帮他签到",
+        "name": "答题闯关",
         "enable": false,
-        "url": "#/conferenceHelpSign"
-    }, {
-        "appId": "_collect_face",
-        "icon": "127.0.0.1:8080/assest/app/app_collect_face.png",
-        "i18nName": {
-            "zh_CN": "集颜值",
-            "zh_TW": "集顏值",
-            "en_US": "Face"
-        },
-        "name": "集颜值",
-        "enable": false,
-        "url": "http://172.20.1.177:6058/conference/app/assets/activity/scan.html?conferenceId=${conferenceId}"
-    }, {
+        "url": "#/question/list"
+    },{
         "appId": "_barrage",
-        "icon": "127.0.0.1:8080/assest/app/app_barrage.png",
+        "icon": "http://123.206.41.246/files/app//app_barrage.png",
         "i18nName": {
             "zh_CN": "发弹幕",
             "zh_TW": "发彈幕",

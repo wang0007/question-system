@@ -806,7 +806,7 @@ db.getCollection('conference.app').update({
     "conferenceId": "__default",
     "apps": [{
         "appId": "_guide",
-        "icon": "http://140.143.133.139/files/app/app_guide.png",
+        "icon": "http://123.206.41.246/files/app/app_guide.png",
         "i18nName": {
             "zh_CN": "大会指南",
             "zh_TW": "大會指南",
@@ -818,7 +818,7 @@ db.getCollection('conference.app').update({
 
     }, {
         "appId": "_info",
-        "icon": "http://140.143.133.139/files/app/app_info.png",
+        "icon": "http://123.206.41.246/files/app/app_info.png",
         "i18nName": {
             "zh_CN": "我的信息",
             "zh_TW": "我的信息",
@@ -829,7 +829,7 @@ db.getCollection('conference.app').update({
         "url": "#/conferenceMy?conferenceId=${conferenceId}"
     }, {
         "appId": "_signin",
-        "icon": "http://140.143.133.139/files/app/app_signin.png",
+        "icon": "http://123.206.41.246/files/app/app_signin.png",
         "i18nName": {
             "zh_CN": "大会签到",
             "zh_TW": "大會簽到",
@@ -840,7 +840,7 @@ db.getCollection('conference.app').update({
         "url": "#/conferenceSign"
     }, {
         "appId": "_rank",
-        "icon": "http://140.143.133.139/files/app/app_agenda.png",
+        "icon": "http://123.206.41.246/files/app/app_agenda.png",
         "i18nName": {
             "zh_CN": "排行榜",
             "zh_TW": "排行榜",
@@ -851,7 +851,7 @@ db.getCollection('conference.app').update({
         "url": "#/question/rank"
     }, {
         "appId": "_question",
-        "icon": "http://140.143.133.139/files/app/app_collect_face.png",
+        "icon": "http://123.206.41.246/files/app/app_collect_face.png",
         "i18nName": {
             "zh_CN": "答题闯关",
             "zh_TW": "答题闯关",
@@ -862,7 +862,7 @@ db.getCollection('conference.app').update({
         "url": "#/question/list"
     },{
         "appId": "_barrage",
-        "icon": "http://140.143.133.139/files/app//app_barrage.png",
+        "icon": "http://123.206.41.246/files/app//app_barrage.png",
         "i18nName": {
             "zh_CN": "发弹幕",
             "zh_TW": "发彈幕",

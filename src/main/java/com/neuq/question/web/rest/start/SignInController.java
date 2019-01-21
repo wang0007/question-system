@@ -95,8 +95,6 @@ public class SignInController {
          */
         private String name;
 
-        private String password;
-
         private String mobile;
 
         private String email;
