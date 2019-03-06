@@ -57,7 +57,7 @@ public class UserRepsitoryImpl extends AbstractMongoRepository<InAPIUser> implem
         Criteria criteria = Criteria.where(InAPIUser.FIELD_MEMBER_ID).is(inAPIUser.getMemberId());
 
         Update update = Update.update(InAPIUser.FIELD_NAME,inAPIUser.getName())
-                .set(InAPIUser.FIELD_MOBILE,InAPIUser.FIELD_MOBILE)
+                .set(InAPIUser.FIELD_MOBILE,inAPIUser.getMobile())
                 .set(InAPIUser.FIELD_EMAIL,inAPIUser.getEmail())
                 .set(InAPIUser.FIELD_SEX,inAPIUser.getSex())
                 .set(InAPIUser.FIELD_BIRTHDAY,inAPIUser.getBirthday());

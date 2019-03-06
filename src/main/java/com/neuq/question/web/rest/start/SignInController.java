@@ -3,10 +3,10 @@ package com.neuq.question.web.rest.start;
 import com.neuq.question.data.dao.UserRepsitory;
 import com.neuq.question.data.pojo.InAPIUser;
 import com.neuq.question.error.UserNameNotExistException;
+import com.neuq.question.web.rest.pojo.InAPIUserDTO;
 import com.neuq.question.web.rest.pojo.SignUpResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import lombok.Data;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.BeanUtils;
 import org.springframework.http.MediaType;
@@ -87,26 +87,4 @@ public class SignInController {
 
     }
 
-
-    @Data
-    private class InAPIUserDTO {
-        /**
-         * 用户名字
-         */
-        private String name;
-
-        private String mobile;
-
-        private String email;
-
-        /**
-         * 生日
-         */
-        private String birthday;
-
-        /**
-         * 0 男 1女 2 未知 "保密"
-         */
-        private String sex;
-    }
 }

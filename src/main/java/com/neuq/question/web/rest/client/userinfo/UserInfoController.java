@@ -5,16 +5,15 @@ import com.neuq.question.data.dao.UserRepsitory;
 import com.neuq.question.data.pojo.InAPIUser;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.RequiredArgsConstructor;
+import lombok.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 /**
  * 用户信息相关接口
@@ -29,6 +28,17 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserInfoController {
 
     private final UserRepsitory userRepsitory;
+
+
+    @ApiOperation(value = "获取所有用户信息列表", notes = "获取所有用户信息")
+    @GetMapping(value = "/list", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    public UserList getUserList() {
+
+        List<InAPIUser> inAPIUsers = userRepsitory.queryAll();
+        UserList userList = new UserList();
+        userList.setUserlist(inAPIUsers);
+        return userList;
+    }
 
     /**
      * 获取用户信息
@@ -47,10 +57,11 @@ public class UserInfoController {
 
     /**
      * 拼接Url地址
+     *
      * @param memberId 用户memberID
      * @return qzID和memberId拼接而成的Url
      */
-    private static String buildUrl( String memberId) {
+    private static String buildUrl(String memberId) {
 
         String userInfoUrl = "/rest/s/%s";
         return String.format(userInfoUrl, memberId);
@@ -72,4 +83,9 @@ public class UserInfoController {
         String qrCodeUrl;
     }
 
+    @Data
+    private class UserList {
+
+        List<InAPIUser> userlist;
+    }
 }
